@@ -1,0 +1,202 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grilla{
+  background-image: url(../assets/background\ white\ and\ yellow.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+  "title title"
+  "nav principal"
+  "footer principal"
+  ;
+  flex-wrap: wrap;
+}
+header{
+  grid-area: title;
+  background-color: #171A21;
+  color: aliceblue;
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap; 
+  height: 6vh;
+}
+aside{
+  grid-area: nav;
+  background-color: #C7E6AC;
+  height: 64vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  transition: 1s;
+}
+aside:hover{
+  border-radius: 80px;
+  transition: 0.5s;
+}
+
+main{
+  grid-area: principal;
+  background-color:#ffffff83;
+  height: 94vh;
+  flex-wrap: wrap;
+  transition: 0.5s;
+}
+main:hover{
+  background-color: #ffffff00;
+  transition: 1s;
+}
+
+footer{
+  grid-area: footer;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  background-color: #C7E6AC;
+  height: 30vh;
+  flex-wrap: wrap;
+  transition: 1s;
+}
+
+footer:hover{
+  border-radius: 70px;
+  transition: 0.5s;
+}
+
+#social{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  list-style: none;
+  margin-top: 10px;
+}
+
+aside nav ul{
+  list-style: none;
+}
+
+.info-principal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10%;
+}
+
+
+
+
+/* _________________style-class-general______________ */
+
+  .grilla header h1{
+      background-color: #C7E6AC;
+      border-radius: 10px;
+      color: #111318;
+      margin-right: 10px;
+      font-family: 'Courier New', Courier, monospace;
+  }
+
+  /* nav-bar */
+
+  aside nav ul li{
+      color: #112A46;
+      margin-top: 10px;
+  }
+  aside nav ul li a{
+      text-decoration: none;
+      color: #112A46;
+      font-weight: bold;
+      transition: 0.5s;
+  }
+
+  aside nav ul li a:hover{
+      text-decoration: none;
+      background-color: #FCF9C0;
+      border-radius: 5px;
+      color: #111318;
+      font-weight: bold;
+      transition: 0.5s;
+      padding: 4px;
+  }
+
+  .titulos{
+      text-align: center;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
+  }
+/* index-main-info */
+.info-principal iframe{
+  border-radius: 10px;
+}
+
+h2{
+  padding: 10px;
+}
+
+.info-tarjetas p{
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 10px;
+}
+
+footer ul li a i{
+  color: #111318;
+  width: 30px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+footer ul li a i:hover{
+  color: #111318;
+  background-color: #FCF9C0;
+  width: 30px;
+  transition: 0.5s;
+  padding: 4px;
+  border-radius: 5px
+}
+
+
+/* contacto----------------------- */
+#contacto-html main{
+  background-color: #C7E6AC;
+}
+#principal-contacto{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 50px;
+}
+#contact{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px 150px;
+  padding-top: 50px;
+  background-color: #F7FFAB;
+  border-radius: 20px;
+  transition: 1.5s;
+}
+#contact:hover{
+  margin: 10px;
+  transition: 1s;
+}
+
+#contact label{
+  margin: 8px 5px;
+  font-size: 19px;
+  color: #030525;
+}
+
+#contact input{
+  border-radius: 5px 5px 0px 0px;
+}
