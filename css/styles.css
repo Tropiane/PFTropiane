@@ -25,12 +25,12 @@ header{
   display: flex;
   justify-content: right;
   flex-wrap: wrap; 
-  height: 6vh;
+  height: auto;
 }
 aside{
   grid-area: nav;
   background-color: #C7E6AC;
-  height: 64vh;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,7 +46,7 @@ aside:hover{
 main{
   grid-area: principal;
   background-color:#ffffff83;
-  height: 94vh;
+  height: auto;
   flex-wrap: wrap;
   transition: 0.5s;
 }
@@ -61,7 +61,7 @@ footer{
   align-items: start;
   justify-content: center;
   background-color: #C7E6AC;
-  height: 30vh;
+  height: auto;
   flex-wrap: wrap;
   transition: 1s;
 }
@@ -96,12 +96,13 @@ aside nav ul{
 
 /* _________________style-class-general______________ */
 
-  .grilla header h1{
+  .grilla header h1 a{
       background-color: #C7E6AC;
       border-radius: 10px;
       color: #111318;
       margin-right: 10px;
       font-family: 'Courier New', Courier, monospace;
+      text-decoration: none;
   }
 
   /* nav-bar */
@@ -132,6 +133,7 @@ aside nav ul{
       font-family: 'Courier New', Courier, monospace;
       font-weight: bold;
   }
+
 /* index-main-info */
 .info-principal iframe{
   border-radius: 10px;
@@ -201,6 +203,40 @@ footer ul li a i:hover{
   border-radius: 5px 5px 0px 0px;
 }
 
+/* objetivos_______________ */
+
+#principal-objetivos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 100px 10px 100px;
+}
+
+#tarjeta-objetivo{
+  display: flex;
+  flex-direction: column;
+  margin: 20px 100px 20px 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+#tarjeta-objetivo div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#tarjeta-objetivo div p{
+  margin: 15px 100px;
+  text-align: center;
+  background-color: #999999;
+  font-size: 18px;
+  border-radius: 10px;
+}
+#tarjeta-objetivo img{
+  width: 350px;
+  border-radius: 15px;
+}
 
 /* MEDIA-QUERY___________ */
 
