@@ -200,3 +200,96 @@ footer ul li a i:hover{
 #contact input{
   border-radius: 5px 5px 0px 0px;
 }
+
+
+/* MEDIA-QUERY___________ */
+
+/* Responsive-tablet */
+@media screen and (max-width:1024px){
+
+  .grilla{
+    background-image: url(../assets/background\ white\ and\ yellow.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+    "title"
+    "nav"
+    "principal"
+    "footer"
+    ;
+    flex-wrap: wrap;
+  }
+
+  header{
+    grid-area: title;
+    background-color: #171A21;
+    color: aliceblue;
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap; 
+    height: 6vh;
+  }
+  aside{
+    grid-area: nav;
+    background-color: #C7E6AC;
+    display: flex;
+    
+  }
+  .grilla aside nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+  main{
+    grid-area: principal;
+    background-color:#ffffff83;
+    height: 94vh;
+    flex-wrap: wrap;
+    transition: 0.5s;
+  }
+  
+  footer{
+    grid-area: footer;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    background-color: #C7E6AC;
+    height: 30vh;
+    flex-wrap: wrap;
+    transition: 1s;
+  }
+  
+  
+  #social{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    list-style: none;
+    margin-top: 10px;
+  }
+  
+  aside nav ul{
+    list-style: none;
+  }
+  
+  .info-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10%;
+  }
+
+}
+
+/* Responsive-celular */
+
+
+@media screen and (max-width:768px){
+
+}
