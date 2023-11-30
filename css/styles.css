@@ -25,12 +25,12 @@ header{
   display: flex;
   justify-content: right;
   flex-wrap: wrap; 
-  height: 6vh;
+  height: auto;
 }
 aside{
   grid-area: nav;
   background-color: #C7E6AC;
-  height: 64vh;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,7 +46,7 @@ aside:hover{
 main{
   grid-area: principal;
   background-color:#ffffff83;
-  height: 94vh;
+  height: auto;
   flex-wrap: wrap;
   transition: 0.5s;
 }
@@ -61,7 +61,7 @@ footer{
   align-items: start;
   justify-content: center;
   background-color: #C7E6AC;
-  height: 30vh;
+  height: auto;
   flex-wrap: wrap;
   transition: 1s;
 }
@@ -104,11 +104,18 @@ aside nav ul{
       font-family: 'Courier New', Courier, monospace;
   }
 
+  .titulos{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
   /* nav-bar */
 
   aside nav ul li{
       color: #112A46;
       margin-top: 10px;
+      flex-wrap: wrap;
   }
   aside nav ul li a{
       text-decoration: none;
@@ -127,12 +134,8 @@ aside nav ul{
       padding: 4px;
   }
 
-  .titulos{
-      text-align: center;
-      font-family: 'Courier New', Courier, monospace;
-      font-weight: bold;
-  }
-/* index-main-info */
+  
+/* Index___________________________ */
 .info-principal iframe{
   border-radius: 10px;
 }
@@ -165,9 +168,16 @@ footer ul li a i:hover{
 
 
 /* contacto----------------------- */
+
 #contacto-html main{
-  background-color: #C7E6AC;
+  background-color: #0a0a0aa4;
 }
+
+#contacto-html main p{
+  color: #ffffff;
+  font-weight: 600;
+}
+
 #principal-contacto{
   display: flex;
   align-items: center;
@@ -175,6 +185,13 @@ footer ul li a i:hover{
   flex-direction: column;
   padding-top: 50px;
 }
+
+#principal-contacto h2{
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin: 15px;
+}
+
 #contact{
   display: flex;
   align-items: center;
@@ -194,13 +211,91 @@ footer ul li a i:hover{
 #contact label{
   margin: 8px 5px;
   font-size: 19px;
-  color: #030525;
+  color: #161930;
 }
 
 #contact input{
   border-radius: 5px 5px 0px 0px;
 }
 
+/* Objetivos_______________ */
+
+#principal-objetivos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px 200px;
+  gap: 10px;
+  text-align: center;
+}
+
+
+#tarjeta-objetivo div{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#tarjeta-objetivo div p{
+  text-align: center;
+  margin: 10px 300px;
+}
+
+#tarjeta-objetivo div img{
+  height: 300px;
+  border-radius: 15px;
+}
+
+/* Alimentacion _______________________ */
+
+#principal-alimentacion{
+  display: flex;
+  flex-direction: column;
+}
+
+#principal-alimentacion p{
+  text-align: center;
+  margin: 10px 250px;
+}
+
+.buscar-comida{
+  display: flex;
+  align-items: start;
+  justify-content: left;
+  gap: 10px;
+  flex-direction: row;
+  margin: 10px;
+}
+
+.buscar-comida input{
+  height: auto;
+  border-radius: 10px;
+  background-color: #588cc4;
+  color: #ffffff;
+}
+
+#principal-alimentacion ul{
+  margin-right: 600px;
+  border-radius: 0px 14px 14px 0px;
+  background-color: #588cc4;
+  transition: 1s;
+}
+
+#principal-alimentacion ul:hover{
+  transition: 0.5s;
+  margin-right: 400px;
+  border-radius: 0px 14px 14px 0px;
+  background-color: #588cc4;
+}
+
+#principal-alimentacion ul li{
+  list-style: none;
+  margin: 10px;
+  
+}
 
 /* MEDIA-QUERY___________ */
 
@@ -230,7 +325,7 @@ footer ul li a i:hover{
     display: flex;
     justify-content: right;
     flex-wrap: wrap; 
-    height: 6vh;
+    height: auto;
   }
   aside{
     grid-area: nav;
@@ -238,17 +333,19 @@ footer ul li a i:hover{
     display: flex;
     
   }
-  .grilla aside nav{
+  
+  .grilla aside nav ul{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 10px;
     height: auto;
   }
   main{
     grid-area: principal;
     background-color:#ffffff83;
-    height: 94vh;
+    height: auto;
     flex-wrap: wrap;
     transition: 0.5s;
   }
@@ -259,7 +356,7 @@ footer ul li a i:hover{
     align-items: start;
     justify-content: center;
     background-color: #C7E6AC;
-    height: 30vh;
+    height: auto;
     flex-wrap: wrap;
     transition: 1s;
   }
@@ -283,6 +380,10 @@ footer ul li a i:hover{
     align-items: center;
     justify-content: center;
     margin: 10%;
+  }
+
+  img{
+    height: auto;
   }
 
 }
