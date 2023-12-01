@@ -98,6 +98,7 @@ aside nav ul{
 
   .grilla header h1{
       background-color: #C7E6AC;
+      text-decoration: none;
       border-radius: 10px;
       color: #111318;
       margin-right: 10px;
@@ -199,13 +200,16 @@ footer ul li a i:hover{
   flex-direction: column;
   margin: 10px 150px;
   padding-top: 50px;
-  background-color: #F7FFAB;
+  background-color: #f3f5df;
+  border: 3px solid #112A46;
   border-radius: 20px;
-  transition: 1.5s;
+  transition: 1s;
+  gap: 5px;
 }
 #contact:hover{
-  margin: 10px;
-  transition: 1s;
+  background-image: linear-gradient(#fbea9d8a, #fef6d8b4, #FFFFFF);
+  box-shadow: 5px 5px 5px #112A46;
+  transition: 0.5s;
 }
 
 #contact label{
@@ -272,9 +276,7 @@ footer ul li a i:hover{
 
 .buscar-comida input{
   height: auto;
-  border-radius: 10px;
-  background-color: #588cc4;
-  color: #ffffff;
+  border-radius: 0px 10px 10px 0px;
 }
 
 #principal-alimentacion ul{
@@ -301,6 +303,20 @@ footer ul li a i:hover{
 
 /* Responsive-tablet */
 @media screen and (max-width:1024px){
+
+
+/* Texto y títulos tamaños */
+
+p{
+
+  height: auto;
+}
+
+.titulos{
+  height: auto;
+}
+
+/* Componentes generales */
 
   .grilla{
     background-image: url(../assets/background\ white\ and\ yellow.jpg);
