@@ -439,7 +439,7 @@ h2{
 
 /* Texto y títulos tamaños */
 
-p{
+.textos{
   height: auto;
   margin: auto;
   font-size: 15px;
@@ -480,7 +480,7 @@ p{
   }
   aside{
     grid-area: nav;
-    background-color: #C7E6AC;
+    background-color: #ffffff;
     display: flex;
     height: auto;
   }
@@ -495,7 +495,7 @@ p{
   }
   main{
     grid-area: principal;
-    background-color:#ffffff83;
+    background-color:#000000d3;
     height: auto;
     /* flex-wrap: wrap; */
     transition: 0.5s;
@@ -506,7 +506,7 @@ p{
     display: flex;
     align-items: start;
     justify-content: center;
-    background-color: #C7E6AC;
+    background-color: #ffffff;
     height: auto;
     flex-wrap: wrap;
     transition: 1s;
@@ -563,7 +563,7 @@ p{
 
 @media screen and (max-width:768px){
 
-  p{
+  .textos{
     font-size: 13px;
   }
   
@@ -600,7 +600,7 @@ p{
   }
   aside{
     grid-area: nav;
-    background-color: #C7E6AC;
+    background-color: #ffffff;
     display: flex;
     height: auto;
   }
@@ -615,7 +615,7 @@ p{
   }
   main{
     grid-area: principal;
-    background-color:#ffffff83;
+    background-color:#000000d3;
     height: auto;
     flex-wrap: wrap;
     transition: 0.5s;
@@ -626,7 +626,7 @@ p{
     display: flex;
     align-items: start;
     justify-content: center;
-    background-color: #C7E6AC;
+    background-color: #ffffff;
     height: auto;
     flex-wrap: wrap;
     transition: 1s;
