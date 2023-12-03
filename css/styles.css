@@ -1,20 +1,24 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Imprima&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+/* Division de pantalla con Grid y Flex */
 .grilla{
   background-image: url(../assets/background\ white\ and\ yellow.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: repeat(3, auto);
+  grid-template-rows: repeat(4, auto);
   grid-template-areas:
   "title title"
   "nav principal"
-  "footer principal"
+  "nav principal"
+  "footer footer"
   ;
   flex-wrap: wrap;
 }
@@ -33,13 +37,13 @@ aside{
   height: auto;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   flex-direction: column;
   flex-wrap: wrap;
   transition: 1s;
 }
 aside:hover{
-  border-radius: 80px;
+  border-radius: 50px;
   transition: 0.5s;
 }
 
@@ -58,7 +62,7 @@ main:hover{
 footer{
   grid-area: footer;
   display: flex;
-  align-items: start;
+  align-items: center;
   justify-content: center;
   background-color: #C7E6AC;
   height: auto;
@@ -74,14 +78,14 @@ footer:hover{
 #social{
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
   gap: 10px;
   list-style: none;
   margin-top: 10px;
 }
 
-aside nav ul{
-  list-style: none;
-}
+
 
 .info-principal{
   display: flex;
@@ -95,24 +99,54 @@ aside nav ul{
 
 
 /* _________________style-class-general______________ */
-
+.grilla header a{
+  text-decoration: none;
+}
   .grilla header h1{
-      background-color: #C7E6AC;
       text-decoration: none;
       border-radius: 10px;
-      color: #111318;
+      color: #ffffff;
       margin-right: 10px;
       font-family: 'Courier New', Courier, monospace;
   }
 
   .titulos{
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Bree+Serif";
     font-weight: bold;
 }
 
-  /* nav-bar */
+.textos{
+  font-family: "Imprima";
+}
 
+footer ul li a i{
+  color: #111318;
+  width: 30px;
+  text-align: center;
+  transition: 0.5s;
+  font-size: 25px;
+    margin-right: 30px;
+}
+
+footer ul li a i:hover{
+  color: #f1f144;
+  background-color: #020201ab;
+  width: 30px;
+  transition: 0.5s;
+  /* padding: 4px; */
+  border-radius: 5px
+}
+
+aside nav ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 0;
+  margin-left: 10px;
+  list-style: none;
+}
   aside nav ul li{
       color: #112A46;
       margin-top: 10px;
@@ -134,7 +168,6 @@ aside nav ul{
       transition: 0.5s;
       padding: 4px;
   }
-
   
 /* Index___________________________ */
 .info-principal iframe{
@@ -150,23 +183,6 @@ h2{
   font-family: Georgia, 'Times New Roman', Times, serif;
   padding: 10px;
 }
-
-footer ul li a i{
-  color: #111318;
-  width: 30px;
-  text-align: center;
-  transition: 0.5s;
-}
-
-footer ul li a i:hover{
-  color: #111318;
-  background-color: #FCF9C0;
-  width: 30px;
-  transition: 0.5s;
-  padding: 4px;
-  border-radius: 5px
-}
-
 
 /* contacto----------------------- */
 
@@ -245,7 +261,7 @@ footer ul li a i:hover{
 
 #tarjeta-objetivo div p{
   text-align: center;
-  margin: 10px 300px;
+  margin: 10px 160px;
 }
 
 #tarjeta-objetivo div img{
@@ -299,21 +315,84 @@ footer ul li a i:hover{
   
 }
 
-/* MEDIA-QUERY___________ */
+/* Planes__________________________________ */
 
-/* Responsive-tablet */
+#principal-planes{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 100px;
+}
+
+.planes-pago ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  height: auto;
+  gap: 15px;
+} 
+
+.planes-pago ul li{
+  height: 250px;
+  border-radius: 0px 10px;
+  transition: 0.5s;
+}
+.planes-pago ul li:hover{
+  border-radius: 15px;
+  transition: 0.5s;
+}
+.planes-pago ul li input{
+  width: 100%;
+}
+
+.planes-pago #estandar{
+  background-image: linear-gradient(#56B4DC, #88CAE7, #BBE1F1);
+  padding: 5px;
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.795);
+  border: solid 1px black;
+}
+.planes-pago #plus{
+  background-image: linear-gradient(#DDB72C, #E5C961, #EEDB96);
+  padding: 5px;
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.795);
+  border: solid 1px black;
+}
+.planes-pago #premium{
+  background-image: linear-gradient(#643F64, #A975A9, #C09BC0);
+  padding: 5px;
+  color: #FFFFFF;
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.795);
+  border: solid 1px black;
+}
+.planes-pago #pro{
+  background-image: linear-gradient(#08090C, #171b27, #58595e);
+  padding: 5px;
+  color: #ffffff;
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.795);
+  border: solid 1px black;
+}
+/* MEDIA-QUERY________________________________________________________ */
+
+
+/* Responsive-tablet _______________*/
+
 @media screen and (max-width:1024px){
 
 
 /* Texto y títulos tamaños */
 
 p{
-
   height: auto;
+  margin: auto;
+  font-size: 15px;
 }
 
 .titulos{
   height: auto;
+  margin: auto;
+  font-size: 25px;
 }
 
 /* Componentes generales */
@@ -347,7 +426,7 @@ p{
     grid-area: nav;
     background-color: #C7E6AC;
     display: flex;
-    
+    height: auto;
   }
   
   .grilla aside nav ul{
@@ -362,7 +441,7 @@ p{
     grid-area: principal;
     background-color:#ffffff83;
     height: auto;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     transition: 0.5s;
   }
   
@@ -397,16 +476,124 @@ p{
     justify-content: center;
     margin: 10%;
   }
-
+  
   img{
     height: auto;
   }
 
+  /* Index___________________________ */
+.info-principal iframe{
+  border-radius: 10px;
+  width: 100%;
 }
 
-/* Responsive-celular */
+  /* Alimentacion_____ */
+  .form-control{
+    margin-right: 20px;
+  }
 
+  /* Objetivos_________ */
+#tarjeta-objetivo div p{
+  margin: 10px 150px;
+}
+
+#tarjeta-objetivo div img{
+  height: 250px;
+}
+
+}
+
+/* Responsive-celular _________________________*/
 
 @media screen and (max-width:768px){
+
+  p{
+    font-size: 13px;
+  }
+  
+  .titulos{
+    font-size: 20px;
+  }
+
+/* Componentes generales */
+
+  .grilla{
+    background-image: url(../assets/background\ white\ and\ yellow.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+    "title"
+    "nav"
+    "principal"
+    "footer"
+    ;
+    flex-wrap: wrap;
+  }
+
+  header{
+    grid-area: title;
+    background-color: #171A21;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    height: auto;
+  }
+  aside{
+    grid-area: nav;
+    background-color: #C7E6AC;
+    display: flex;
+    height: auto;
+  }
+  
+  .grilla aside nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: auto;
+  }
+  main{
+    grid-area: principal;
+    background-color:#ffffff83;
+    height: auto;
+    flex-wrap: wrap;
+    transition: 0.5s;
+  }
+  
+  footer{
+    grid-area: footer;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    background-color: #C7E6AC;
+    height: auto;
+    flex-wrap: wrap;
+    transition: 1s;
+  }
+
+ /* Index___________________________ */
+ .info-principal iframe{
+  border-radius: 10px;
+  width: 80%;
+}
+
+/* Alimentacion_____ */
+.form-control{
+  margin-right: 20px;
+}
+
+/* Objetivos_________ */
+#tarjeta-objetivo div p{
+  margin: 10px 100px;
+}
+
+#tarjeta-objetivo div img{
+  height: 200px;
+}
 
 }
