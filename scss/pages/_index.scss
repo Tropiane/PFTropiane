@@ -1,0 +1,48 @@
+/* Pages */
+/* Index */
+//pages
+main{
+    .principal-index{
+        div{
+            h2{
+                    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                    color: whitesmoke;
+                    text-transform: uppercase;
+                    text-align: right;
+                    margin: 30px 10px;
+            }
+            p{
+                    text-align: center;
+                    text-transform: capitalize;
+            }
+        }
+    }
+    .texto-general-index{
+        display: flex;
+        flex-direction: column;
+
+            .titulos-index1{
+                font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                text-align: left;
+                margin: 30px 10px;
+                color: #8cd2f0;
+                border-bottom: 2px solid white;
+                margin-right: 350px;
+            }
+            .titulos-index2{
+                font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                text-align: right;
+                margin: 30px 10px;
+                color: #8cd2f0;
+                border-bottom: 2px solid white;
+                margin-left: 350px;
+            }
+            details{
+                summary{
+                    color: white;
+                    font-weight: bold;
+                    text-align: center;
+            }
+        }
+    }
+}

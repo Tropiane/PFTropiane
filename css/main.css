@@ -1,0 +1,203 @@
+/*Reset*/
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Imprima&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Globales */
+.grilla {
+  background-image: url(../assets/background\ white\ and\ yellow.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "title title" "nav principal" "nav principal" "footer footer";
+  flex-wrap: wrap;
+}
+
+header {
+  grid-area: title;
+  background-color: #171A21;
+  color: aliceblue;
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+aside {
+  grid-area: nav;
+  background-color: #ffffff;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-right: 2px solid black;
+  transition: 1s;
+}
+aside:hover {
+  border-radius: 50px;
+  transition: 0.5s;
+  border: 2px solid black;
+}
+
+main {
+  grid-area: principal;
+  background-color: rgba(0, 0, 0, 0.8274509804);
+  height: auto;
+  flex-wrap: wrap;
+  transition: 0.5s;
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  height: auto;
+  flex-wrap: wrap;
+  border-top: 2px solid black;
+  transition: 1s;
+}
+footer:hover {
+  border-radius: 70px;
+  transition: 0.5s;
+}
+
+.info-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10%;
+}
+
+/*Clases generales */
+.titulos {
+  text-align: center;
+  font-family: "Bree+Serif";
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.textos {
+  font-family: "Imprima";
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+/*Header */
+header #icono-hamburguesa {
+  height: 45px;
+}
+header h1 {
+  text-decoration: none;
+  border-radius: 10px;
+  color: #ffffff;
+  margin-right: 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* NAV*/
+aside nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 0;
+  margin-left: 10px;
+  list-style: none;
+}
+aside nav ul li {
+  color: #000000;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+aside nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  transition: 0.5s;
+}
+aside nav ul li a:hover {
+  text-decoration: none;
+  background-color: #000000;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: bold;
+  transition: 0.5s;
+  padding: 4px;
+}
+
+/* Footer */
+footer #social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+  margin-top: 10px;
+}
+footer ul li a i {
+  color: #111318;
+  width: 30px;
+  text-align: center;
+  transition: 0.5s;
+  font-size: 25px;
+  margin-right: 30px;
+}
+footer ul li a i:hover {
+  color: #ffffff;
+  background-color: rgba(2, 2, 1, 0.6705882353);
+  width: 30px;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+/* Pages */
+/* Index */
+main .principal-index div h2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: whitesmoke;
+  text-transform: uppercase;
+  text-align: right;
+  margin: 30px 10px;
+}
+main .principal-index div p {
+  text-align: center;
+  text-transform: capitalize;
+}
+main .texto-general-index {
+  display: flex;
+  flex-direction: column;
+}
+main .texto-general-index .titulos-index1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: left;
+  margin: 30px 10px;
+  color: #8cd2f0;
+  border-bottom: 2px solid white;
+  margin-right: 350px;
+}
+main .texto-general-index .titulos-index2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: right;
+  margin: 30px 10px;
+  color: #8cd2f0;
+  border-bottom: 2px solid white;
+  margin-left: 350px;
+}
+main .texto-general-index details summary {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.css.map */

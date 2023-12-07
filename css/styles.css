@@ -1,13 +1,13 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Imprima&display=swap');
 
-*{
+/* *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 /* Division de pantalla con Grid y Flex */
-.grilla{
+/* .grilla{
   background-image: url(../assets/background\ white\ and\ yellow.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -92,17 +92,14 @@ footer:hover{
   align-items: center;
   justify-content: center;
   margin: 10%;
-}
+} */
 
 
 
 
 /* _________________style-class-general______________ */
 
-.grilla header a{
-  text-decoration: none;
-}
-  .grilla header h1{
+  /* .grilla header h1{
       text-decoration: none;
       border-radius: 10px;
       color: #ffffff;
@@ -111,9 +108,9 @@ footer:hover{
   }
   .grilla header img{
     height: 45px;
-  }
+  } */
 
-  .titulos{
+  /* .titulos{
     text-align: center;
     font-family: "Bree+Serif";
     font-weight: bold;
@@ -124,9 +121,9 @@ footer:hover{
   font-family: "Imprima";
   font-weight: 600;
   color: #FFFFFF;
-}
+} */
 
-footer ul li a i{
+/* footer ul li a i{
   color: #111318;
   width: 30px;
   text-align: center;
@@ -141,9 +138,9 @@ footer ul li a i:hover{
   width: 30px;
   transition: 0.5s;
   border-radius: 5px
-}
+} */
 
-aside nav ul{
+/* aside nav ul{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -151,8 +148,8 @@ aside nav ul{
   padding: 0;
   margin-left: 10px;
   list-style: none;
-}
-  aside nav ul li{
+} */
+  /* aside nav ul li{
       color: #000000;
       margin-top: 10px;
       flex-wrap: wrap;
@@ -172,11 +169,11 @@ aside nav ul{
       font-weight: bold;
       transition: 0.5s;
       padding: 4px;
-  }
+  } */
   
 /* Index___________________________ */
 
-.principal-index{
+/* .principal-index{
   display: flex;
   flex-direction: column;
 }
@@ -187,31 +184,31 @@ aside nav ul{
   text-transform: uppercase;
   text-align: right;
   margin: 30px 10px;
-}
-#texto-inicial{
+} */
+/* #texto-inicial{
   text-align: center;
   text-transform: capitalize;
-}
+} */
 
-.titulos-index1{
+/* .titulos-index1{
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-align: left;
   margin: 30px 10px;
   color: #8cd2f0;
   border-bottom: 2px solid white;
   margin-right: 350px;
-}
+} */
 
-.titulos-index2{
+/* .titulos-index2{
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-align: right;
   margin: 30px 10px;
   color: #8cd2f0;
   border-bottom: 2px solid white;
   margin-left: 350px;
-}
+} */
 
-.texto-general-index p{
+/* .texto-general-index p{
   text-align: center;
   margin: 20px 250px;
   text-transform: capitalize;
@@ -221,7 +218,7 @@ aside nav ul{
   color: white;
   font-weight: bold;
   text-align: center;
-}
+} */
 
 .info-principal iframe{
   border-radius: 10px;

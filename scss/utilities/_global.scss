@@ -1,0 +1,81 @@
+/*Globales */
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Imprima&display=swap');
+
+.grilla{
+    background-image: url(../assets/background\ white\ and\ yellow.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+    "title title"
+    "nav principal"
+    "nav principal"
+    "footer footer"
+    ;
+    flex-wrap: wrap;
+  }
+    header{
+    grid-area: title;
+    background-color: #171A21;
+    color: aliceblue;
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap; 
+    height: auto;
+   }
+    aside{
+    grid-area: nav;
+    background-color: #ffffff;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-right: 2px solid black;
+    transition: 1s;
+    &:hover{
+        border-radius: 50px;
+        transition: 0.5s;
+        border: 2px solid black;
+      }
+    }
+ 
+  
+  main{
+    grid-area: principal;
+    background-color:#000000d3;
+    height: auto;
+    flex-wrap: wrap;
+    transition: 0.5s;
+  }
+  
+  footer{
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    height: auto;
+    flex-wrap: wrap;
+    border-top: 2px solid black;
+    transition: 1s;
+    &:hover{
+      border-radius: 70px;
+      transition: 0.5s;
+    }
+  }
+
+  
+  .info-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10%;
+  }
+
+
