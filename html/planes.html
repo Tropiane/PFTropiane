@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://kit.fontawesome.com/d45b6dc3ef.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FontAwesome imagenes y fuentes -->
+    <script src="https://kit.fontawesome.com/d45b6dc3ef.js" crossorigin="anonymous"></script>
+    <!-- Link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Planes</title>
 </head>
 <body id="planes">
@@ -12,7 +16,8 @@
     <div class="grilla">
 
         <header>
-            <h1><a href="../index.html"> MAXTRACKER </a></h1>
+            <img src="../assets/hamburger-icon.png" id="icono-hamburguesa" alt="Icono de hamburguesa">
+            <h1> MAXTRACKER</h1>
         </header>
 
         <!-- Navegación -->
@@ -53,20 +58,21 @@
         PLANES
     </h1>
     <h2 class="titulos"> ¿Que son los planes?</h2>
-    <p>
+    <p class="textos">
         Recordá que siempre vas a tener tu repertorio totalmente gratuito, asi como tu biblioteca y el uso de todas las funciones de la plataforma. Igualmente, si deseas tener una biblioteca mas extensa, tienes estudiantes o eres un profesional que desea tener un plan para cada paciente, alumno o amigo, puedes pagar uno de estos planes que te darán acceso a mas almacenamiento o contenido que necesites. <span>Encontrarás a continuación los planes que actualmente tenemos disponibles</span>
     </p>
     </section>
 
-    <!-- Pasarela de pagos -->
+    
+    <!-- Tarjetas____________________ -->
     <section class="planes-pago">
-<div>
     <ul>
         <li id="estandar">
             <h3>Plan Estandar</h3>
             <p>+20 espacios para tus comidas</p>
             <p> 2 consultas mensuales con profesionales</p>
             <p>+1 biblioteca adicional</p>
+            <input type="submit" value="Lo quiero" class="btn btn-primary">
         </li>
 
         <li id="plus"> 
@@ -74,6 +80,7 @@
             <p>+30 espacios para tus comidas</p>
             <p>4 consultas mensuales con profesionales</p>
             <p>+2 bibliotecas adicionales</p>
+            <input type="button" value="Lo quiero" class="btn btn-primary">
         </li>
 
         <li id="premium"> 
@@ -82,6 +89,7 @@
             <p>4 consultas mensuales con profesionales</p>
             <p>+6 bibliotecas adicionales</p>
             <p>acceso al área profesional</p>
+            <input type="submit" value="Lo quiero" class="btn btn-primary">
         </li>
 
         <li id="pro">
@@ -90,29 +98,29 @@
              <p>7 consultas mensuales con profesionales</p>
              <p>+10 bibliotecas adicionales</p>
              <p>acceso al área profesional</p>
+             <input type="submit" value="Lo quiero" class="btn btn-primary">
             </li>
     </ul>
-</div>
     </section>
-
-    <section id="sobre-planes"></section>
 </main>
 
 <footer>
     <ul id="social">
-        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
 
-        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+        <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
 
-        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="https://www.facebook.com/"  target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
         
-        <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
-
-        <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+        <li><a href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-square-twitter"></i></a></li>
+        <li><a href="https://www.tiktok.com/" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
     </ul>
 </footer>
 
 
     </div>
+
+    <!-- JS Bootsrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

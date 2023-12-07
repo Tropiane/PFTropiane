@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://kit.fontawesome.com/d45b6dc3ef.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FontAwesome imagenes y fuentes -->
+    <script src="https://kit.fontawesome.com/d45b6dc3ef.js" crossorigin="anonymous"></script>
+    <!-- Link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+
     <title>Alimentación</title>
 </head>
 <body>
 <div class="grilla">
 
     <header>
-        <h1><a href="../index.html"> MAXTRACKER </a></h1>
+        <img src="../assets/hamburger-icon.png" id="icono-hamburguesa" alt="Icono de hamburguesa">
+        <h1> MAXTRACKER</h1>
     </header>
 
     <!-- Navegación -->
@@ -45,59 +51,83 @@
         </nav>
         </aside>
 
+<!-- Info-Principal -->
 <main>
+
 <section id="principal-alimentacion">
 
 <h1 class="titulos">
     Alimentos
 </h1>
-<p>
+
+<details >
+    <summary class="titulos">¿Que encontrarás aquí?</summary>
+<p class="textos">
     Aqui encontrarás una extensa lista de alimentos, todos los que necesites para preparar tanto tu desayuno, almuerzo, merienda y cena, ya sea para contar calorias de forma exacta o aproximada, tener en cuenta el valor energético de los productos que consumes y sus propiedades generales.
 </p>
-<p>
+</details>
+
+<details>
+    <summary class="titulos">¿Como funciona este apartado?</summary>
+<p class="textos">
     Por otro lado, podrás añadir alimentos que desees a tu biblioteca, ya sean productos que no encuentres en la web en internet, puedes cargar sus valores y añadirlo a tu biblioteca.
-    Asmimismo, en la parte inferior tendrás un apartado llamado <span>Añadir a la biblioteca</span> donde podrás agregar ese alimento a tu biblioteca personal o compartirlo con tu comunidad.
+    Asimismo, en la parte inferior tendrás un apartado llamado <span>Añadir a la biblioteca</span> donde podrás agregar ese alimento a tu biblioteca personal o compartirlo con tu comunidad.
 </p>
+</details>
+
 <div class="buscar-comida">
-    <select name="" id="">
-        <option value="" selected>
-            Alimentos
-        </option>
+    <select class="form-select" name="" id="">
+        <datalist id="lista-comidas">
+        <option selected> Alimentos </option>
+        <option value="huevo">Huevo</option>
+        <option value="palta">Palta</option>
+        <option value="leche">Leche</option>
+        <option value="banana">Banana</option>
     </select>
-    <input type="search">
+</datalist>
+    <input type="search" list="lista-comidas" class="form-control">
 </div>
 
 <div class="buscar-comida">
-    <input type="submit" value="Añadir al Desayuno">
-<input type="submit" value="Añadir al Almuerzo">
-<input type="submit" value="Añadir a la Merienda">
-<input type="submit" value="Añadir a la Cena">
+        <input class="btn btn-primary" type="submit" value="Añadir al Desayuno">
+    <input class="btn btn-primary" type="submit" value="Añadir al Almuerzo">
+    <input class="btn btn-primary" type="submit" value="Añadir a la Merienda">
+    <input class="btn btn-primary" type="submit" value="Añadir a la Cena">
 </div>
 
-<ul class="buscar-comida">
+<ul class="textos">
     <li>Gramos: </li>
     <li>Calorias: </li>
     <li> Otros valores: </li>
 </ul>
 
-<input type="submit" id="submit-food" value="Añadir a la Biblioteca">
+<input type="submit" class="btn btn-primary" value="Añadir a la Biblioteca">
+
+<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@wikimusculos/video/7307718080036080902" data-video-id="7307718080036080902" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@wikimusculos" href="https://www.tiktok.com/@wikimusculos?refer=embed">@wikimusculos</a></section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+
 </section>
+
 </main>
 
+<!-- Footer -->
 
 <footer>
     <ul id="social">
-        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
 
-        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+        <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
 
-        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="https://www.facebook.com/"  target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
         
-        <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
-        <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+        <li><a href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-square-twitter"></i></a></li>
+        <li><a href="https://www.tiktok.com/" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
     </ul>
 </footer>
 
 </div>
+
+<!-- JS Bootsrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 </body>
 </html>
