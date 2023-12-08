@@ -18,8 +18,8 @@ main{
         }
     }
     .texto-general-index{
-        display: flex;
-        flex-direction: column;
+            display: flex;
+            flex-direction: column;
 
             .titulos-index1{
                 font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -45,4 +45,10 @@ main{
             }
         }
     }
+}
+
+.info-principal{
+        iframe{
+            border-radius: 10px;
+        }
 }

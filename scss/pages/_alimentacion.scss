@@ -1,0 +1,57 @@
+//Alimentacion
+/* ALimentacion */
+
+#alimentacion{
+    main{
+        #principal-alimentacion{
+            display: flex;
+            flex-direction: column;
+            p{
+                text-align: center;
+                margin: 10px 250px;
+            }
+            details{
+                summary{
+                    text-align: center;
+                    margin: 10px 350px;
+                    background-color: #ffffff;
+                    color: rgb(0, 0, 0);
+                    border-radius: 5px;
+                }
+            }
+            .buscar-comida{
+                display: flex;
+                align-items: start;
+                justify-content: left;
+                gap: 10px;
+                flex-direction: row;
+                margin: 10px;
+                input{
+                    height: auto;
+                    border-radius: 0px 10px 10px 0px;
+                }
+            }
+            ul{
+                margin-right: 600px;
+                border-radius: 0px 14px 14px 0px;
+                background-color: #588cc4;
+                transition: 1s;
+                &:hover{
+                    transition: 0.5s;
+                    margin-right: 400px;
+                    border-radius: 0px 14px 14px 0px;
+                    background-color: #588cc4;
+                  }
+                  li{
+                    list-style: none;
+                    margin: 10px;
+                  }
+            }
+            blockquote{
+                height: auto;
+                width: auto;
+                border-radius: 10px;
+            }
+        }
+    }
+}

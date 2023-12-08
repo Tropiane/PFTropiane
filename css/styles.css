@@ -220,32 +220,13 @@ footer ul li a i:hover{
   text-align: center;
 } */
 
-.info-principal iframe{
+/* .info-principal iframe{
   border-radius: 10px;
-}
-
-h2{
-  padding: 10px;
-}
-
-.info-tarjetas p{
-  text-align: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  padding: 10px;
-}
+} */
 
 /* contacto----------------------- */
 
-#contacto-html main{
-  background-color: #0a0a0aa4;
-}
-
-#contacto-html main p{
-  color: #ffffff;
-  font-weight: 600;
-}
-
-#principal-contacto{
+/* #principal-contacto{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -257,9 +238,9 @@ h2{
   background-color: #ffffff;
   border-radius: 10px;
   margin: 15px;
-}
+} */
 
-#contact{
+/* #contact{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -276,9 +257,9 @@ h2{
   background-color: #643F64;
   box-shadow: 5px 5px 5px #112A46;
   transition: 0.5s;
-}
+} */
 
-#contact label{
+/* #contact label{
   margin: 8px 5px;
   font-size: 19px;
   font-weight: bold;
@@ -288,11 +269,11 @@ h2{
 #contact input{
   margin: 10px;
   border-radius: 5px 5px 0px 0px;
-}
+} */
 
 /* Objetivos_______________ */
 
-#principal-objetivos{
+/* #principal-objetivos{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -300,9 +281,9 @@ h2{
   margin: 20px 200px;
   gap: 10px;
   text-align: center;
-}
+} */
 
-
+/* 
 #tarjeta-objetivo div{
   display: flex;
   align-items: center;
@@ -319,11 +300,11 @@ h2{
 #tarjeta-objetivo div img{
   height: 300px;
   border-radius: 15px;
-}
+} */
 
 /* Alimentacion _______________________ */
 
-#principal-alimentacion{
+/* #principal-alimentacion{
   display: flex;
   flex-direction: column;
 }
@@ -340,14 +321,14 @@ h2{
   gap: 10px;
   flex-direction: row;
   margin: 10px;
-}
+} */
 
-.buscar-comida input{
+/* .buscar-comida input{
   height: auto;
   border-radius: 0px 10px 10px 0px;
-}
+} */
 
-#principal-alimentacion ul{
+/* #principal-alimentacion ul{
   margin-right: 600px;
   border-radius: 0px 14px 14px 0px;
   background-color: #588cc4;
@@ -365,21 +346,21 @@ h2{
   list-style: none;
   margin: 10px;
   
-}
+} */
 
-#principal-alimentacion details summary{
+/* #principal-alimentacion details summary{
   text-align: center;
   margin: 10px 350px;
   background-color: #ffffff;
   color: rgb(0, 0, 0);
   border-radius: 5px;
-}
+} */
 
-#principal-alimentacion blockquote{
+/* #principal-alimentacion blockquote{
   height: auto;
   width: auto;
   border-radius: 10px;
-}
+} */
 
 /* Planes__________________________________ */
 
