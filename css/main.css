@@ -200,4 +200,206 @@ main .texto-general-index details summary {
   text-align: center;
 }
 
+.info-principal iframe {
+  border-radius: 10px;
+}
+
+/* Contacto */
+#contacto main .principal.contacto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 50px;
+}
+#contacto main form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px 150px;
+  padding-top: 50px;
+  background-color: #242422;
+  border: 3px solid #112A46;
+  border-radius: 20px;
+  transition: 1s;
+  gap: 5px;
+}
+#contacto main form:hover {
+  background-color: #000000;
+  box-shadow: 5px 5px 5px #a8bacf;
+  transition: 0.5s;
+}
+#contacto main form label {
+  margin: 8px 5px;
+  font-size: 19px;
+  font-weight: bold;
+  color: #b1b8f0;
+}
+#contacto main form input {
+  margin: 10px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+#objetivos main #principal-objetivos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px 200px;
+  gap: 10px;
+  text-align: center;
+}
+#objetivos main #tarjeta-objetivo div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#objetivos main #tarjeta-objetivo div p {
+  text-align: center;
+  margin: 10px 160px;
+}
+#objetivos main #tarjeta-objetivo div img {
+  height: 300px;
+  border-radius: 15px;
+}
+
+/* ALimentacion */
+#alimentacion main #principal-alimentacion {
+  display: flex;
+  flex-direction: column;
+}
+#alimentacion main #principal-alimentacion p {
+  text-align: center;
+  margin: 10px 250px;
+}
+#alimentacion main #principal-alimentacion details summary {
+  text-align: center;
+  margin: 10px 350px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+}
+#alimentacion main #principal-alimentacion .buscar-comida {
+  display: flex;
+  align-items: start;
+  justify-content: left;
+  gap: 10px;
+  flex-direction: row;
+  margin: 10px;
+}
+#alimentacion main #principal-alimentacion .buscar-comida input {
+  height: auto;
+  border-radius: 0px 10px 10px 0px;
+}
+#alimentacion main #principal-alimentacion ul {
+  margin-right: 600px;
+  border-radius: 0px 14px 14px 0px;
+  background-color: #588cc4;
+  transition: 1s;
+}
+#alimentacion main #principal-alimentacion ul:hover {
+  transition: 0.5s;
+  margin-right: 400px;
+  border-radius: 0px 14px 14px 0px;
+  background-color: #588cc4;
+}
+#alimentacion main #principal-alimentacion ul li {
+  list-style: none;
+  margin: 10px;
+}
+#alimentacion main #principal-alimentacion blockquote {
+  height: auto;
+  width: auto;
+  border-radius: 10px;
+}
+
+/* Preparacion */
+#preparacion main #principal-preparacion {
+  display: flex;
+  flex-direction: column;
+}
+#preparacion main #principal-preparacion p {
+  text-align: center;
+  margin: 15px 300px;
+}
+#preparacion main #principal-preparacion #seleccionar-comida {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#preparacion main #principal-preparacion #preparar-comida {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+#preparacion main #principal-preparacion #preparacion-valores {
+  list-style: none;
+}
+#preparacion main #principal-preparacion blockquote {
+  height: auto;
+  width: auto;
+  border-radius: 10px;
+}
+
+/* Planes */
+#planes main #principal-planes #principal-planes {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 100px;
+}
+#planes .planes-pago ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  height: auto;
+  gap: 15px;
+}
+#planes .planes-pago ul li {
+  height: 250px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+#planes .planes-pago ul li:hover {
+  border-radius: 15px;
+  transition: 0.5s;
+  height: 265px;
+}
+#planes .planes-pago ul li input {
+  width: 100%;
+}
+#planes .planes-pago #estandar {
+  background-image: linear-gradient(#56B4DC, #88CAE7, #BBE1F1);
+  padding: 5px;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.589);
+  border: solid 1px black;
+}
+#planes .planes-pago #plus {
+  background-image: linear-gradient(#DDB72C, #E5C961, #EEDB96);
+  padding: 5px;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.795);
+  border: solid 1px rgb(255, 255, 255);
+}
+#planes .planes-pago #premium {
+  background-image: linear-gradient(#643F64, #A975A9, #C09BC0);
+  padding: 5px;
+  color: #FFFFFF;
+  box-shadow: 3px 3px rgba(255, 255, 255, 0.795);
+  border: solid 1px rgb(7, 7, 7);
+}
+#planes .planes-pago #pro {
+  background-image: linear-gradient(#08090C, #171b27, #58595e);
+  padding: 5px;
+  color: #ffffff;
+  box-shadow: 3px 3px rgba(255, 255, 255, 0.795);
+  border: solid 1px rgb(255, 255, 255);
+}
+
 /*# sourceMappingURL=main.css.map */

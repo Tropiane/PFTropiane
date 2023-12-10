@@ -364,7 +364,7 @@ footer ul li a i:hover{
 
 /* Planes__________________________________ */
 
-#principal-planes{
+/* #principal-planes{
   display: flex;
   flex-direction: column;
   margin: 10px 100px;
@@ -379,9 +379,9 @@ footer ul li a i:hover{
   list-style: none;
   height: auto;
   gap: 15px;
-} 
+}  */
 
-.planes-pago ul li{
+/* .planes-pago ul li{
   height: 250px;
   border-radius: 10px;
   transition: 0.5s;
@@ -390,41 +390,41 @@ footer ul li a i:hover{
   border-radius: 15px;
   transition: 0.5s;
   height: 265px;
-}
-.planes-pago ul li input{
+} */
+/* .planes-pago ul li input{
   width: 100%;
-}
+} */
 
-.planes-pago #estandar{
+/* .planes-pago #estandar{
   background-image: linear-gradient(#56B4DC, #88CAE7, #BBE1F1);
   padding: 5px;
   box-shadow: 3px 3px rgba(0, 0, 0, 0.589);
   border: solid 1px black;
-}
-.planes-pago #plus{
+} */
+/* .planes-pago #plus{
   background-image: linear-gradient(#DDB72C, #E5C961, #EEDB96);
   padding: 5px;
   box-shadow: 3px 3px rgba(0, 0, 0, 0.795);
   border: solid 1px rgb(255, 255, 255);
-}
-.planes-pago #premium{
+} */
+/* .planes-pago #premium{
   background-image: linear-gradient(#643F64, #A975A9, #C09BC0);
   padding: 5px;
   color: #FFFFFF;
   box-shadow: 3px 3px rgba(255, 255, 255, 0.795);
   border: solid 1px rgb(7, 7, 7);
-}
-.planes-pago #pro{
+} */
+/* .planes-pago #pro{
   background-image: linear-gradient(#08090C, #171b27, #58595e);
   padding: 5px;
   color: #ffffff;
   box-shadow: 3px 3px rgba(255, 255, 255, 0.795);
   border: solid 1px rgb(255, 255, 255);
-}
+} */
 
 /* Preparacion_________________________________ */
 
-#principal-preparacion{
+/* #principal-preparacion{
   display: flex;
   flex-direction: column;
 }
@@ -432,23 +432,23 @@ footer ul li a i:hover{
 #principal-preparacion p{
   text-align: center;
   margin: 15px 300px;
-}
+} */
 
-#seleccionar-comida{
+/* #seleccionar-comida{
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
-#preparar-comida{
+/* #preparar-comida{
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
   margin-top: 10px;
-}
+} */
 
-#preparacion-valores{
+/* #preparacion-valores{
   list-style: none;
 }
 
@@ -456,7 +456,7 @@ footer ul li a i:hover{
   height: auto;
   width: auto;
   border-radius: 10px;
-}
+} */
 
 /* MEDIA-QUERY________________________________________________________ */
 
