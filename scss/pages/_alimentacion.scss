@@ -31,21 +31,35 @@
                     border-radius: 0px 10px 10px 0px;
                 }
             }
-            ul{
-                margin-right: 600px;
-                border-radius: 0px 14px 14px 0px;
-                background-color: #588cc4;
-                transition: 1s;
-                &:hover{
-                    transition: 0.5s;
-                    margin-right: 400px;
+            .valores{
+                display: flex;
+                align-items: start;
+                justify-content: left;
+                flex-direction: column;
+                ul{
+                    margin-right: 500px;
+                    width: 200px;
                     border-radius: 0px 14px 14px 0px;
-                    background-color: #588cc4;
-                  }
-                  li{
+                    background-color: #ffffff;
+                    transition: 1s;
+                    color: rgb(3, 6, 41);
+                      li{
+                        list-style: none;
+                        margin: 10px;
+                        border-bottom: 2px solid #ffffff;
+                    }
+                }
+                details{
                     list-style: none;
-                    margin: 10px;
-                  }
+                    summary{
+                        align-items: start;
+                    }
+                    li{
+                        border-bottom: 1px solid #ffffff;
+                        width: 300px;
+                    }
+
+                }
             }
             blockquote{
                 height: auto;

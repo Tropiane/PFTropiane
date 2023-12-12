@@ -52,6 +52,7 @@
         </aside>
 
 <!-- Info-Principal -->
+
 <main>
 
 <section id="principal-alimentacion">
@@ -95,11 +96,24 @@
     <input class="btn btn-primary" type="submit" value="Añadir a la Cena">
 </div>
 
-<ul class="textos">
-    <li>Gramos: </li>
-    <li>Calorias: </li>
-    <li> Otros valores: </li>
-</ul>
+ <div class="valores">
+    <ul class="textos">
+        <li>Gramos: </li>
+        <li>Calorias: </li>
+    </ul>
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" class="textos">
+          Otros valores
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Sodio:</a></li>
+          <li><a class="dropdown-item" href="#">Azúcares:</a></li>
+          <li><a class="dropdown-item" href="#">Grasas:</a></li>
+          <li><a class="dropdown-item" href="#">Carbohidratos:</a></li>
+        </ul>
+      </div>
+ </div>
+
 
 <input type="submit" id="biblioteca" class="btn btn-primary" value="Añadir a la Biblioteca">
 
