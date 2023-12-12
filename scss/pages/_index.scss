@@ -49,6 +49,11 @@ main{
 
 .info-principal{
         iframe{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 10%;
             border-radius: 10px;
         }
 }

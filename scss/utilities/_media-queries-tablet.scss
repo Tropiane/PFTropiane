@@ -1,0 +1,116 @@
+/* Media-Queries */
+
+
+/* Responsive-tablet _______________*/
+
+@media screen and (max-width:1024px){
+
+/* Texto y títulos tamaños */
+.textos{
+    height: auto;
+    margin: auto;
+    font-size: 15px;
+  }
+  
+  .titulos{
+    height: auto;
+    margin: auto;
+    font-size: 25px;
+  }
+
+  /* Componentes generales */
+  .grilla{
+    background-image: url(../assets/background\ white\ and\ yellow.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+    "title"
+    "nav"
+    "principal"
+    "footer"
+    ;
+        header{
+            grid-area: title;
+            background-color: #171A21;
+            color: aliceblue;
+            display: flex;
+            justify-content: right;
+            flex-wrap: wrap; 
+            height: auto;
+        }
+        aside{
+            grid-area: nav;
+            background-color: #ffffff;
+            display: flex;
+            height: auto;
+            nav{
+                ul{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    list-style: none;
+                    gap: 10px;
+                    height: auto;
+                }
+            }
+        }
+        main{
+            grid-area: principal;
+            background-color:#000000d3;
+            height: auto;
+            flex-wrap: wrap;
+            transition: 0.5s;
+        }
+        footer{
+            grid-area: footer;
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            background-color: #ffffff;
+            height: auto;
+            flex-wrap: wrap;
+            transition: 1s;
+        }
+        #social{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            list-style: none;
+            margin-top: 10px;
+        }
+        img{
+            height: auto;
+          }
+
+          /* Index___________________________ */
+          .info-principal{
+                iframe{
+                    border-radius: 10px;
+                    width: 100%;
+                }
+          }
+
+           /* Alimentacion_____ */
+        .form-control{
+                margin-right: 20px;
+        }
+
+         /* Objetivos_________ */
+         #tarjeta-objetivo{
+            div{
+                img{
+                    height: 250px;
+                }
+                p{
+                    margin: 10px 150px;
+                }
+            }
+         }
+
+         
+    }
+}
