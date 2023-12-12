@@ -1,0 +1,116 @@
+/*Responsive-celular */
+
+@media screen and (max-width:768px){
+
+    .textos{
+        font-size: 13px;
+        text-align: center;
+        width: auto;
+      }
+      
+      .titulos{
+        font-size: 20px;
+      }
+      /* Componentes generales */
+      .grilla{
+        background-image: url(../assets/background\ white\ and\ yellow.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+        "title"
+        "nav"
+        "principal"
+        "footer"
+        ;
+         header{
+            grid-area: title;
+            background-color: #171A21;
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; 
+            height: auto;
+        }
+        aside{
+            grid-area: nav;
+            background-color: #ffffff;
+            display: flex;
+            height: auto;
+            nav{
+                ul{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+                    height: auto;
+                }
+            }
+        }
+        main{
+            grid-area: principal;
+            background-color:#000000d3;
+            height: auto;
+            flex-wrap: wrap;
+            transition: 0.5s;
+        }
+        footer{
+            grid-area: footer;
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            background-color: #ffffff;
+            height: auto;
+            flex-wrap: wrap;
+            transition: 1s;
+        }
+         /* Index___________________________ */
+         .info-principal{
+            iframe{
+                border-radius: 10px;
+                width: 80%;
+            }
+         }
+         /* Alimentacion_____ */
+         #principal-alimentacion{
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            details{
+                summary{
+                    font-size: 15px;
+                    width: 150px;
+                }
+            }
+            .buscar-comida{
+                select{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: auto;
+                }
+                input{
+                    width: auto;
+                }
+            }
+            .form-control{
+                margin-right: 20px;
+              }
+         }
+         /* Objetivos_________ */
+         #tarjeta-objetivo{
+            div{
+                img{
+                    height: 200px;
+                }
+                p{
+                    margin: 10px 100px;
+                }
+            }
+         }
+    }
+}

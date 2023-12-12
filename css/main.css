@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Reset*/
 @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Imprima&display=swap");
 * {
@@ -201,6 +202,11 @@ main .texto-general-index details summary {
 }
 
 .info-principal iframe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10%;
   border-radius: 10px;
 }
 
@@ -381,11 +387,17 @@ main .texto-general-index details summary {
   box-shadow: 3px 3px rgba(0, 0, 0, 0.589);
   border: solid 1px black;
 }
+#planes .planes-pago #estandar:hover {
+  transform: scale(1.1);
+}
 #planes .planes-pago #plus {
   background-image: linear-gradient(#DDB72C, #E5C961, #EEDB96);
   padding: 5px;
   box-shadow: 3px 3px rgba(0, 0, 0, 0.795);
   border: solid 1px rgb(255, 255, 255);
+}
+#planes .planes-pago #plus:hover {
+  transform: scale(1.1);
 }
 #planes .planes-pago #premium {
   background-image: linear-gradient(#643F64, #A975A9, #C09BC0);
@@ -394,12 +406,207 @@ main .texto-general-index details summary {
   box-shadow: 3px 3px rgba(255, 255, 255, 0.795);
   border: solid 1px rgb(7, 7, 7);
 }
+#planes .planes-pago #premium:hover {
+  transform: scale(1.1);
+}
 #planes .planes-pago #pro {
   background-image: linear-gradient(#08090C, #171b27, #58595e);
   padding: 5px;
   color: #ffffff;
   box-shadow: 3px 3px rgba(255, 255, 255, 0.795);
   border: solid 1px rgb(255, 255, 255);
+}
+#planes .planes-pago #pro:hover {
+  transform: scale(1.1);
+}
+
+/* Media-Queries */
+/* Responsive-tablet _______________*/
+@media screen and (max-width: 1024px) {
+  /* Texto y títulos tamaños */
+  .textos {
+    height: auto;
+    margin: auto;
+    font-size: 15px;
+  }
+  .titulos {
+    height: auto;
+    margin: auto;
+    font-size: 25px;
+  }
+  /* Componentes generales */
+  .grilla {
+    background-image: url(../assets/background\ white\ and\ yellow.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "title" "nav" "principal" "footer";
+    /* Index___________________________ */
+    /* Alimentacion_____ */
+    /* Objetivos_________ */
+  }
+  .grilla header {
+    grid-area: title;
+    background-color: #171A21;
+    color: aliceblue;
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .grilla aside {
+    grid-area: nav;
+    background-color: #ffffff;
+    display: flex;
+    height: auto;
+  }
+  .grilla aside nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 10px;
+    height: auto;
+  }
+  .grilla main {
+    grid-area: principal;
+    background-color: rgba(0, 0, 0, 0.8274509804);
+    height: auto;
+    flex-wrap: wrap;
+    transition: 0.5s;
+  }
+  .grilla footer {
+    grid-area: footer;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    background-color: #ffffff;
+    height: auto;
+    flex-wrap: wrap;
+    transition: 1s;
+  }
+  .grilla #social {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    list-style: none;
+    margin-top: 10px;
+  }
+  .grilla img {
+    height: auto;
+  }
+  .grilla .info-principal iframe {
+    border-radius: 10px;
+    width: 100%;
+  }
+  .grilla .form-control {
+    margin-right: 20px;
+  }
+  .grilla #tarjeta-objetivo div img {
+    height: 250px;
+  }
+  .grilla #tarjeta-objetivo div p {
+    margin: 10px 150px;
+  }
+}
+/*Responsive-celular */
+@media screen and (max-width: 768px) {
+  .textos {
+    font-size: 13px;
+    text-align: center;
+    width: auto;
+  }
+  .titulos {
+    font-size: 20px;
+  }
+  /* Componentes generales */
+  .grilla {
+    background-image: url(../assets/background\ white\ and\ yellow.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "title" "nav" "principal" "footer";
+    /* Index___________________________ */
+    /* Alimentacion_____ */
+    /* Objetivos_________ */
+  }
+  .grilla header {
+    grid-area: title;
+    background-color: #171A21;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .grilla aside {
+    grid-area: nav;
+    background-color: #ffffff;
+    display: flex;
+    height: auto;
+  }
+  .grilla aside nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: auto;
+  }
+  .grilla main {
+    grid-area: principal;
+    background-color: rgba(0, 0, 0, 0.8274509804);
+    height: auto;
+    flex-wrap: wrap;
+    transition: 0.5s;
+  }
+  .grilla footer {
+    grid-area: footer;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    background-color: #ffffff;
+    height: auto;
+    flex-wrap: wrap;
+    transition: 1s;
+  }
+  .grilla .info-principal iframe {
+    border-radius: 10px;
+    width: 80%;
+  }
+  .grilla #principal-alimentacion {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .grilla #principal-alimentacion details summary {
+    font-size: 15px;
+    width: 150px;
+  }
+  .grilla #principal-alimentacion .buscar-comida select {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+  .grilla #principal-alimentacion .buscar-comida input {
+    width: auto;
+  }
+  .grilla #principal-alimentacion .form-control {
+    margin-right: 20px;
+  }
+  .grilla #tarjeta-objetivo div img {
+    height: 200px;
+  }
+  .grilla #tarjeta-objetivo div p {
+    margin: 10px 100px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
