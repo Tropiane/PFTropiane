@@ -4,32 +4,51 @@
 #preparacion{
     main{
         #principal-preparacion{
-            display: flex;
-            flex-direction: column;
-            p{
-                text-align: center;
-                margin: 15px 300px;
-            }
-            #seleccionar-comida{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            #preparar-comida{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 10px;
-                margin-top: 10px;
-            }
-            #preparacion-valores{
-                list-style: none;
-            }
-            blockquote{
-                height: auto;
-                width: auto;
-                border-radius: 10px;
+          display: grid;
+          grid-template-columns: repeat(2, auto);
+          grid-template-rows: repeat(3, auto);
+          grid-template-areas: 
+          "info info"
+          "valores comida"
+          "video video"
+          ;
+          #comida-info{
+            grid-area: info;
+            @include flex(column, center, center);
+        }
+
+        #seleccionar-comida{
+            grid-area: comida;
+            @include flex(row, center, center);
+            flex-wrap: wrap;
+            gap: 10px;
+            border: 1px solid #fff;
+            margin: auto 5px;
+            padding: 10px;
+        }
+
+        #preparacion-valores{
+            grid-area: valores;
+            @include flex(column, center, left);
+            border: 1px solid #fff;
+            margin: auto 5px;
+            padding: 10px;
+            ul{
+                li{
+                    list-style: none;
+                    border-bottom: 1px solid #fff;
+                }
+                
             }
         }
+
+        blockquote{
+            grid-area: video;
+            width: 200px;
+            border-radius: 10px;
+            border: 2px solid black;
+        }
+        }
+
     }
 }

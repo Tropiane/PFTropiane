@@ -4,68 +4,54 @@
 #alimentacion{
     main{
         #principal-alimentacion{
-            display: flex;
-            flex-direction: column;
-            p{
-                text-align: center;
-                margin: 10px 250px;
-            }
-            details{
-                summary{
-                    text-align: center;
-                    margin: 10px 350px;
-                    background-color: #ffffff;
-                    color: rgb(0, 0, 0);
-                    border-radius: 5px;
-                }
-            }
-            .buscar-comida{
-                display: flex;
-                align-items: start;
-                justify-content: left;
-                gap: 10px;
-                flex-direction: row;
-                margin: 10px;
-                input{
-                    height: auto;
-                    border-radius: 0px 10px 10px 0px;
-                }
-            }
-            .valores{
-                display: flex;
-                align-items: start;
-                justify-content: left;
-                flex-direction: column;
-                ul{
-                    margin-right: 500px;
-                    width: 200px;
-                    border-radius: 0px 14px 14px 0px;
-                    background-color: #ffffff;
-                    transition: 1s;
-                    color: rgb(3, 6, 41);
-                      li{
-                        list-style: none;
-                        margin: 10px;
-                        border-bottom: 2px solid #ffffff;
-                    }
-                }
+           display: grid;
+           grid-template-columns: repeat(2, auto);
+           grid-template-rows: repeat(3, auto);
+           grid-template-areas: 
+           "info info"
+           "valores buscar"
+           "video video"
+           ; 
+           .details{
+            grid-area: info;
+            @include flex(column, center, center);
+            margin: 20px;
+            gap: 15px;
                 details{
-                    list-style: none;
-                    summary{
-                        align-items: start;
+                    p{
+                        margin: 5px 200px;
+                        span{
+                            font-weight: bold;
+                            color: green;
+                        }
                     }
-                    li{
-                        border-bottom: 1px solid #ffffff;
-                        width: 300px;
-                    }
-
                 }
-            }
-            blockquote{
-                height: auto;
-                width: auto;
-                border-radius: 10px;
-            }
+           }
+           .buscar-comida{
+            grid-area: buscar;
+            @include flex(row, center, center);
+            flex-wrap: wrap;
+            gap: 10px;
+            width: auto;
+            border: 1px solid #fff;
+            border-radius: 10px;
+            margin-right: 5px;
+           }
+           .valores{
+            grid-area: valores;
+            @include flex(column, center, left);
+            gap: 10px;
+            width: auto;
+            border: 1px solid #fff;
+            border-radius: 10px;
+            margin-right: 5px;
+           }
+           blockquote{
+            grid-area: video;
+            @include flex(column, center, center);
+            width: 200px;
+            border-radius: 10px;
+           }
         }
     }
 }

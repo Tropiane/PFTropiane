@@ -276,95 +276,107 @@ main .texto-general-index details summary {
 
 /* ALimentacion */
 #alimentacion main #principal-alimentacion {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "info info" "valores buscar" "video video";
+}
+#alimentacion main #principal-alimentacion .details {
+  grid-area: info;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  gap: 15px;
 }
-#alimentacion main #principal-alimentacion p {
-  text-align: center;
-  margin: 10px 250px;
+#alimentacion main #principal-alimentacion .details details p {
+  margin: 5px 200px;
 }
-#alimentacion main #principal-alimentacion details summary {
-  text-align: center;
-  margin: 10px 350px;
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
-  border-radius: 5px;
+#alimentacion main #principal-alimentacion .details details p span {
+  font-weight: bold;
+  color: green;
 }
 #alimentacion main #principal-alimentacion .buscar-comida {
+  grid-area: buscar;
   display: flex;
-  align-items: start;
-  justify-content: left;
-  gap: 10px;
   flex-direction: row;
-  margin: 10px;
-}
-#alimentacion main #principal-alimentacion .buscar-comida input {
-  height: auto;
-  border-radius: 0px 10px 10px 0px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: auto;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  margin-right: 5px;
 }
 #alimentacion main #principal-alimentacion .valores {
+  grid-area: valores;
   display: flex;
-  align-items: start;
-  justify-content: left;
   flex-direction: column;
-}
-#alimentacion main #principal-alimentacion .valores ul {
-  margin-right: 500px;
-  width: 200px;
-  border-radius: 0px 14px 14px 0px;
-  background-color: #ffffff;
-  transition: 1s;
-  color: rgb(3, 6, 41);
-}
-#alimentacion main #principal-alimentacion .valores ul li {
-  list-style: none;
-  margin: 10px;
-  border-bottom: 2px solid #ffffff;
-}
-#alimentacion main #principal-alimentacion .valores details {
-  list-style: none;
-}
-#alimentacion main #principal-alimentacion .valores details summary {
-  align-items: start;
-}
-#alimentacion main #principal-alimentacion .valores details li {
-  border-bottom: 1px solid #ffffff;
-  width: 300px;
+  justify-content: center;
+  align-items: left;
+  gap: 10px;
+  width: auto;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  margin-right: 5px;
 }
 #alimentacion main #principal-alimentacion blockquote {
-  height: auto;
-  width: auto;
+  grid-area: video;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
   border-radius: 10px;
 }
 
 /* Preparacion */
 #preparacion main #principal-preparacion {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "info info" "valores comida" "video video";
+}
+#preparacion main #principal-preparacion #comida-info {
+  grid-area: info;
   display: flex;
   flex-direction: column;
-}
-#preparacion main #principal-preparacion p {
-  text-align: center;
-  margin: 15px 300px;
+  justify-content: center;
+  align-items: center;
 }
 #preparacion main #principal-preparacion #seleccionar-comida {
+  grid-area: comida;
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-}
-#preparacion main #principal-preparacion #preparar-comida {
-  display: flex;
   align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
   gap: 10px;
-  margin-top: 10px;
+  border: 1px solid #fff;
+  margin: auto 5px;
+  padding: 10px;
 }
 #preparacion main #principal-preparacion #preparacion-valores {
+  grid-area: valores;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  border: 1px solid #fff;
+  margin: auto 5px;
+  padding: 10px;
+}
+#preparacion main #principal-preparacion #preparacion-valores ul li {
   list-style: none;
+  border-bottom: 1px solid #fff;
 }
 #preparacion main #principal-preparacion blockquote {
-  height: auto;
-  width: auto;
+  grid-area: video;
+  width: 200px;
   border-radius: 10px;
+  border: 2px solid black;
 }
 
 /* Planes */
