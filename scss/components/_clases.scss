@@ -12,3 +12,31 @@
   font-weight: 600;
   color: #FFFFFF;
 }
+
+.btn-main{
+    border: 0;
+    background-image: linear-gradient(
+      150deg, #3182D8, #5497DE, #98C0EB
+    );
+    border-radius: 9px;
+    color: #FFFFFF;
+    @include flex(row, center, center);
+    font-size: 15px;
+    font-weight: 500;
+    padding: 5px;
+    cursor: pointer;
+    transition: .4s;
+       &:active{
+      transform: scale(0.9);
+      background-image: linear-gradient(#059286, #7ec4c7, #b7dad8);
+    }
+      span{
+      background-color: #1e273a;
+      padding: 12px 25px;
+      border-radius: 6px;
+      transition: .3s;
+         &:hover{
+        background: none;
+      }
+    }
+}

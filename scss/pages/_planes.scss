@@ -3,32 +3,39 @@
 
 #planes{
      main{
-        #principal-planes{
             #principal-planes{
-                display: flex;
-                flex-direction: column;
+                @include flex(column, center, center);
+                text-align: center;
+                font-size: 20px;
                 margin: 10px 100px;
               }
         }
      }
      .planes-pago{
         ul{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
+            @include flex(row, center, center);
             flex-wrap: wrap;
             list-style: none;
             height: auto;
             gap: 15px;
-            li{
-                height: 250px;
+                    li{
+                height: 270px;
                 border-radius: 10px;
                 transition: 0.5s;
-                &:hover{
+                border: 1px solid white;
+                background-color: transparent;
+                color: #fff;
+                box-shadow: 6px 6px 5px #fffcf969;
+                        &:hover{
                     border-radius: 15px;
                     transition: 0.5s;
-                    height: 265px;
+                    transform: scale(1.05);
+                    }   
+                    h3{
+                        text-align: center;
+                }
+                p{
+                    margin: 10px;
                 }
                 input{
                     width: 100%;
@@ -37,43 +44,5 @@
         }
         
         //Tarjetas-planes
-        #estandar{
-            background-image: linear-gradient(#5685dc, #88a1e7, #bbc3f1);
-            padding: 5px;
-            box-shadow: 3px 3px rgba(0, 0, 0, 0.589);
-            border: solid 1px black;
-                &:hover {
-                transform: scale(1.1);
-            }
-        }
-        #plus{
-            background-image: linear-gradient(#DDB72C, #E5C961, #EEDB96);
-            padding: 5px;
-            box-shadow: 3px 3px rgba(0, 0, 0, 0.795);
-            border: solid 1px rgb(255, 255, 255);
-            &:hover {
-                transform: scale(1.1);
-            }
-        }
-        #premium{
-            background-image: linear-gradient(#643F64, #A975A9, #C09BC0);
-            padding: 5px;
-            color: #FFFFFF;
-            box-shadow: 3px 3px rgba(255, 255, 255, 0.795);
-            border: solid 1px rgb(7, 7, 7);
-            &:hover {
-                transform: scale(1.1);
-            }
-        }
-        #pro{
-            background-image: linear-gradient(#08090C, #171b27, #58595e);
-            padding: 5px;
-            color: #ffffff;
-            box-shadow: 3px 3px rgba(255, 255, 255, 0.795);
-            border: solid 1px rgb(255, 255, 255);
-            &:hover {
-                transform: scale(1.1);
-            }
-        }
+        
      }
-}

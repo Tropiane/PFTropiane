@@ -92,6 +92,35 @@ footer:hover {
   color: #FFFFFF;
 }
 
+.btn-main {
+  border: 0;
+  background-image: linear-gradient(150deg, #3182D8, #5497DE, #98C0EB);
+  border-radius: 9px;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.btn-main:active {
+  transform: scale(0.9);
+  background-image: linear-gradient(#059286, #7ec4c7, #b7dad8);
+}
+.btn-main span {
+  background-color: #1e273a;
+  padding: 12px 25px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+.btn-main span:hover {
+  background: none;
+}
+
 /*Header */
 header #icono-hamburguesa {
   height: 45px;
@@ -322,6 +351,13 @@ main .texto-general-index details summary {
   border-radius: 10px;
   margin-right: 5px;
 }
+#alimentacion main #principal-alimentacion .valores ul {
+  list-style: none;
+}
+#alimentacion main #principal-alimentacion .valores ul li {
+  border-bottom: 1px solid;
+  margin-left: 10px;
+}
 #alimentacion main #principal-alimentacion blockquote {
   grid-area: video;
   display: flex;
@@ -358,6 +394,10 @@ main .texto-general-index details summary {
   margin: auto 5px;
   padding: 10px;
 }
+#preparacion main #principal-preparacion #seleccionar-comida input {
+  border-radius: 5px;
+  border: 1px solid #fff;
+}
 #preparacion main #principal-preparacion #preparacion-valores {
   grid-area: valores;
   display: flex;
@@ -380,71 +420,48 @@ main .texto-general-index details summary {
 }
 
 /* Planes */
-#planes main #principal-planes #principal-planes {
+#planes main #principal-planes {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
   margin: 10px 100px;
 }
-#planes .planes-pago ul {
+
+.planes-pago ul {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   list-style: none;
   height: auto;
   gap: 15px;
 }
-#planes .planes-pago ul li {
-  height: 250px;
+.planes-pago ul li {
+  height: 270px;
   border-radius: 10px;
   transition: 0.5s;
+  border: 1px solid white;
+  background-color: transparent;
+  color: #fff;
+  box-shadow: 6px 6px 5px rgba(255, 252, 249, 0.4117647059);
 }
-#planes .planes-pago ul li:hover {
+.planes-pago ul li:hover {
   border-radius: 15px;
   transition: 0.5s;
-  height: 265px;
+  transform: scale(1.05);
 }
-#planes .planes-pago ul li input {
+.planes-pago ul li h3 {
+  text-align: center;
+}
+.planes-pago ul li p {
+  margin: 10px;
+}
+.planes-pago ul li input {
   width: 100%;
-}
-#planes .planes-pago #estandar {
-  background-image: linear-gradient(#5685dc, #88a1e7, #bbc3f1);
-  padding: 5px;
-  box-shadow: 3px 3px rgba(0, 0, 0, 0.589);
-  border: solid 1px black;
-}
-#planes .planes-pago #estandar:hover {
-  transform: scale(1.1);
-}
-#planes .planes-pago #plus {
-  background-image: linear-gradient(#DDB72C, #E5C961, #EEDB96);
-  padding: 5px;
-  box-shadow: 3px 3px rgba(0, 0, 0, 0.795);
-  border: solid 1px rgb(255, 255, 255);
-}
-#planes .planes-pago #plus:hover {
-  transform: scale(1.1);
-}
-#planes .planes-pago #premium {
-  background-image: linear-gradient(#643F64, #A975A9, #C09BC0);
-  padding: 5px;
-  color: #FFFFFF;
-  box-shadow: 3px 3px rgba(255, 255, 255, 0.795);
-  border: solid 1px rgb(7, 7, 7);
-}
-#planes .planes-pago #premium:hover {
-  transform: scale(1.1);
-}
-#planes .planes-pago #pro {
-  background-image: linear-gradient(#08090C, #171b27, #58595e);
-  padding: 5px;
-  color: #ffffff;
-  box-shadow: 3px 3px rgba(255, 255, 255, 0.795);
-  border: solid 1px rgb(255, 255, 255);
-}
-#planes .planes-pago #pro:hover {
-  transform: scale(1.1);
 }
 
 /* Media-Queries */
@@ -463,9 +480,7 @@ main .texto-general-index details summary {
   }
   /* Componentes generales */
   .grilla {
-    background-image: url(../assets/background\ white\ and\ yellow.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(68, 68, 68), rgb(78, 78, 78));
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
@@ -551,9 +566,7 @@ main .texto-general-index details summary {
   }
   /* Componentes generales */
   .grilla {
-    background-image: url(../assets/background\ white\ and\ yellow.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(68, 68, 68), rgb(78, 78, 78));
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);

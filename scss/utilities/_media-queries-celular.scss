@@ -13,9 +13,8 @@
       }
       /* Componentes generales */
       .grilla{
-        background-image: url(../assets/background\ white\ and\ yellow.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
+        // background-image: url(../assets/background\ white\ and\ yellow.jpg);
+        background-image: linear-gradient(rgb(0, 0, 0), rgb(68, 68, 68), rgb(78, 78, 78));
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, auto);
