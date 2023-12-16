@@ -280,23 +280,22 @@ main .texto-general-index details summary {
 
 #objetivos main #principal-objetivos {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  margin: 20px 200px;
-  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
   text-align: center;
 }
 #objetivos main #tarjeta-objetivo div {
   display: flex;
-  align-items: center;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 #objetivos main #tarjeta-objetivo div p {
   text-align: center;
-  margin: 10px 160px;
+  margin: 10px auto;
 }
 #objetivos main #tarjeta-objetivo div img {
   height: 300px;
@@ -466,7 +465,7 @@ main .texto-general-index details summary {
 
 /* Media-Queries */
 /* Responsive-tablet _______________*/
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   /* Texto y títulos tamaños */
   .textos {
     height: auto;
@@ -555,7 +554,12 @@ main .texto-general-index details summary {
   }
 }
 /*Responsive-celular */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
   .textos {
     font-size: 13px;
     text-align: center;
@@ -566,9 +570,8 @@ main .texto-general-index details summary {
   }
   /* Componentes generales */
   .grilla {
-    background-image: linear-gradient(rgb(0, 0, 0), rgb(68, 68, 68), rgb(78, 78, 78));
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1, auto;
     grid-template-rows: repeat(4, auto);
     grid-template-areas: "title" "nav" "principal" "footer";
     /* Index___________________________ */
@@ -593,40 +596,51 @@ main .texto-general-index details summary {
   .grilla aside nav ul {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
     gap: 10px;
     height: auto;
   }
   .grilla main {
     grid-area: principal;
-    background-color: rgba(0, 0, 0, 0.8274509804);
     height: auto;
     flex-wrap: wrap;
-    transition: 0.5s;
   }
   .grilla footer {
     grid-area: footer;
     display: flex;
-    align-items: start;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
     background-color: #ffffff;
     height: auto;
     flex-wrap: wrap;
     transition: 1s;
   }
+  .grilla .principal-index #titulo-inicial {
+    font-size: 20px;
+  }
+  .grilla .principal-index .texto-general-index .titulos-index1 {
+    font-size: 19px;
+  }
+  .grilla .principal-index .texto-general-index .titulos-index2 {
+    font-size: 19px;
+  }
   .grilla .info-principal iframe {
     border-radius: 10px;
-    width: 80%;
+    width: 200px;
   }
   .grilla #principal-alimentacion {
     display: flex;
     flex-direction: column;
-    height: auto;
+    margin: auto;
   }
   .grilla #principal-alimentacion details summary {
     font-size: 15px;
-    width: 150px;
+    width: auto;
+  }
+  .grilla #principal-alimentacion details p {
+    width: 250px;
   }
   .grilla #principal-alimentacion .buscar-comida select {
     display: flex;
@@ -641,11 +655,11 @@ main .texto-general-index details summary {
   .grilla #principal-alimentacion .form-control {
     margin-right: 20px;
   }
-  .grilla #tarjeta-objetivo div img {
-    height: 200px;
+  .grilla main #tarjeta-objetivo div img {
+    width: auto;
   }
-  .grilla #tarjeta-objetivo div p {
-    margin: 10px 100px;
+  .grilla main #tarjeta-objetivo div p {
+    margin: 0;
   }
 }
 

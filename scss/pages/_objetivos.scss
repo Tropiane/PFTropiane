@@ -1,24 +1,17 @@
  #objetivos{
     main{
         #principal-objetivos{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            margin: 20px 200px;
-            gap: 10px;
+            @include flex(column, center, center);
+            margin: 20px auto;
             text-align: center;
         }
         #tarjeta-objetivo{
             div{
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                justify-content: center;
+                @include flex(column, center, center);
                 flex-wrap: wrap;
                 p{
                     text-align: center;
-                    margin: 10px 160px;
+                    margin: 10px auto;
                 }
                 img{
                     height: 300px;
