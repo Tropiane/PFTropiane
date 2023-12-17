@@ -163,6 +163,9 @@ aside nav ul li a:hover {
   transition: 0.5s;
   padding: 4px;
 }
+aside .nav-media {
+  display: none;
+}
 
 /* Footer */
 footer #social {
@@ -563,13 +566,14 @@ main .texto-general-index details summary {
   .textos {
     font-size: 13px;
     text-align: center;
-    width: auto;
+    margin: 10px 100px;
   }
   .titulos {
     font-size: 20px;
   }
   /* Componentes generales */
   .grilla {
+    height: 100%;
     display: grid;
     grid-template-columns: 1, auto;
     grid-template-rows: repeat(4, auto);
@@ -577,13 +581,17 @@ main .texto-general-index details summary {
     /* Index___________________________ */
     /* Alimentacion_____ */
     /* Objetivos_________ */
+    /* Contacto*/
+    /* Planes*/
   }
   .grilla header {
     grid-area: title;
     background-color: #171A21;
     color: aliceblue;
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     height: auto;
   }
@@ -593,6 +601,9 @@ main .texto-general-index details summary {
     display: flex;
     height: auto;
   }
+  .grilla aside nav {
+    display: none;
+  }
   .grilla aside nav ul {
     display: flex;
     flex-direction: row;
@@ -601,10 +612,41 @@ main .texto-general-index details summary {
     gap: 10px;
     height: auto;
   }
+  .grilla aside .nav-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .grilla aside .nav-media summary {
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+    list-style: none;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  .grilla aside .nav-media summary i {
+    padding: 5px;
+    color: #171A21;
+  }
+  .grilla aside .nav-media ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+  }
+  .grilla aside .nav-media ul li a {
+    text-decoration: none;
+    color: #171A21;
+  }
   .grilla main {
     grid-area: principal;
     height: auto;
+    width: 100%;
     flex-wrap: wrap;
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(48, 46, 46), rgb(24, 24, 24));
   }
   .grilla footer {
     grid-area: footer;
@@ -614,17 +656,20 @@ main .texto-general-index details summary {
     align-items: center;
     background-color: #ffffff;
     height: auto;
+    width: 100%;
     flex-wrap: wrap;
     transition: 1s;
   }
   .grilla .principal-index #titulo-inicial {
     font-size: 20px;
+    margin-right: 50px;
   }
   .grilla .principal-index .texto-general-index .titulos-index1 {
     font-size: 19px;
   }
   .grilla .principal-index .texto-general-index .titulos-index2 {
     font-size: 19px;
+    margin: 10px 100px;
   }
   .grilla .info-principal iframe {
     border-radius: 10px;
@@ -656,10 +701,32 @@ main .texto-general-index details summary {
     margin-right: 20px;
   }
   .grilla main #tarjeta-objetivo div img {
-    width: auto;
+    width: 250px;
+    height: 250px;
   }
   .grilla main #tarjeta-objetivo div p {
     margin: 0;
+  }
+  .grilla main form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 300px;
+  }
+  .grilla main form h3 {
+    font-size: 18px;
+  }
+  .grilla main form label {
+    font-size: 17px;
+  }
+  .grilla main form input {
+    font-size: 17px;
+  }
+  .grilla #principal-planes p {
+    width: 200px;
+    margin-top: 20px;
   }
 }
 
