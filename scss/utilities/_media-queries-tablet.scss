@@ -15,13 +15,13 @@
   .titulos{
     height: auto;
     margin: auto;
-    font-size: 25px;
+    font-size: 20px;
   }
 
   /* Componentes generales */
   .grilla{
     // background-image: url(../assets/background\ white\ and\ yellow.jpg);
-        background-image: linear-gradient(rgb(0, 0, 0), rgb(68, 68, 68), rgb(78, 78, 78));
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(48, 46, 46), rgb(24, 24, 24));
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, auto);
@@ -33,8 +33,8 @@
         ;
         header{
             grid-area: title;
-            background-color: #171A21;
-            color: aliceblue;
+            background-color: nth($list: $colores, $n: 4);
+            color: nth($list: $colores, $n: 5);
             display: flex;
             justify-content: right;
             flex-wrap: wrap; 
@@ -42,7 +42,7 @@
         }
         aside{
             grid-area: nav;
-            background-color: #ffffff;
+            background-color: nth($list: $colores, $n: 5);
             display: flex;
             height: auto;
             nav{
@@ -61,7 +61,7 @@
         footer{
             grid-area: footer;
             @include flex(row, center, center);
-            background-color: #ffffff;
+            background-color: nth($list: $colores, $n: 5);
             height: auto;
             flex-wrap: wrap;
             transition: 1s;

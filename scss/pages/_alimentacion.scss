@@ -22,7 +22,7 @@
                         margin: 5px 200px;
                         span{
                             font-weight: bold;
-                            color: green;
+                            color: nth($list: $colores, $n: 6);
                         }
                     }
                 }
@@ -33,7 +33,7 @@
             flex-wrap: wrap;
             gap: 10px;
             width: auto;
-            border: 1px solid #fff;
+            border: 1px solid #ffffff;
             border-radius: 10px;
             margin-right: 5px;
            }
@@ -42,7 +42,7 @@
             @include flex(column, center, left);
             gap: 10px;
             width: auto;
-            border: 1px solid #fff;
+            border: 1px solid #ffffff;
             border-radius: 10px;
             margin-right: 5px;
                 ul{

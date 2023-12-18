@@ -11,17 +11,17 @@
                 margin-left: 10px;
                 list-style: none;
                     li{
-                    color: #000000;
+                    color: nth($list: $colores, $n: 4);
                     margin-top: 10px;
                     flex-wrap: wrap;
                         a{
                         text-decoration: none;
-                        color: #000000;
+                        color: nth($list: $colores, $n: 4);
                         font-weight: bold;
                         transition: 0.5s;
                             &:hover{
                             text-decoration: none;
-                            background-color: #000000;
+                            background-color: nth($list: $colores, $n: 4);
                             border-radius: 5px;
                             color: #ffffff;
                             font-weight: bold;
@@ -54,7 +54,7 @@
             li{
                 a{
                     i{
-                        color: #111318;
+                        color: nth($list: $colores, $n: 4);
                         width: 30px;
                         text-align: center;
                         transition: 0.5s;
@@ -62,7 +62,7 @@
                         margin-right: 30px;
                             &:hover{
                             color: #ffffff;
-                            background-color: #020201ab;
+                            background-color: nth($list: $colores, $n: 4);
                             width: 30px;
                             transition: 0.5s;
                             border-radius: 5px

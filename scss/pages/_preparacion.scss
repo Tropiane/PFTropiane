@@ -22,25 +22,25 @@
             @include flex(row, center, center);
             flex-wrap: wrap;
             gap: 10px;
-            border: 1px solid #fff;
+            border: 1px solid #ffffff;
             margin: auto 5px;
             padding: 10px;
                 input{
                     border-radius: 5px;
-                    border: 1px solid #fff;
+                    border: 1px solid #ffffff;
                 }
         }
 
         #preparacion-valores{
             grid-area: valores;
             @include flex(column, center, left);
-            border: 1px solid #fff;
+            border: 1px solid #ffffff;
             margin: auto 5px;
             padding: 10px;
             ul{
                 li{
                     list-style: none;
-                    border-bottom: 1px solid #fff;
+                    border-bottom: 1px solid #ffffff;
                 } 
             }
         }

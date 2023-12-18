@@ -13,19 +13,16 @@
             }
     }
     form{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+        @include flex(column, center, center);
         margin: 10px 150px;
         padding-top: 50px;
-        background-color: #242422;
-        border: 3px solid #112A46;
+        background-color: transparent;
+        border: 1px solid #ffffff;
         border-radius: 20px;
         transition: 1s;
         gap: 5px;
         &:hover{
-            background-color: #000000;
+            background-color: nth($list: $colores, $n: 4);
             box-shadow: 5px 5px 5px #a8bacf;
             transition: 0.5s;
         }
@@ -33,12 +30,15 @@
             margin: 8px 5px;
             font-size: 19px;
             font-weight: bold;
-            color: #b1b8f0;
+            color: nth($list: $colores, $n: 5);
         }
         input{
             margin: 10px;
             border-radius: 5px 5px 0px 0px;
              }
+        textarea{
+            margin: 0px;
+        }
         }
     }
 }

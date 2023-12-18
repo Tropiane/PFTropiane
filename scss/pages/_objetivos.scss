@@ -2,7 +2,7 @@
     main{
         #principal-objetivos{
             @include flex(column, center, center);
-            margin: 20px auto;
+            margin: 20px 10px;
             text-align: center;
         }
         #tarjeta-objetivo{
@@ -11,8 +11,9 @@
                 flex-wrap: wrap;
                 p{
                     text-align: center;
+                    margin: 10px 20px;
                         span{
-                            color: green;
+                            color: nth($list: $colores, $n: 6);
                         }
                 }
                 img{

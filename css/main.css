@@ -9,7 +9,7 @@
 
 /*Globales */
 .grilla {
-  background-image: linear-gradient(rgb(0, 0, 0), rgb(68, 68, 68), rgb(78, 78, 78));
+  background-image: linear-gradient(rgb(0, 0, 0), rgb(48, 46, 46), rgb(24, 24, 24));
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
@@ -22,7 +22,7 @@
 header {
   grid-area: title;
   background-color: #171A21;
-  color: aliceblue;
+  color: #ffffff;
   display: flex;
   justify-content: right;
   flex-wrap: wrap;
@@ -75,20 +75,20 @@ footer:hover {
   text-align: center;
   font-family: "Bree+Serif";
   font-weight: bold;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .textos {
   font-family: "Imprima";
   font-weight: 600;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .btn-main {
   border: 0;
   background-image: linear-gradient(150deg, #3182D8, #5497DE, #98C0EB);
   border-radius: 9px;
-  color: #FFFFFF;
+  color: #ffffff;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -115,7 +115,7 @@ footer:hover {
 
 /*Header */
 header #icono-hamburguesa {
-  height: 45px;
+  height: 43px;
 }
 header h1 {
   text-decoration: none;
@@ -136,19 +136,19 @@ aside nav ul {
   list-style: none;
 }
 aside nav ul li {
-  color: #000000;
+  color: #171A21;
   margin-top: 10px;
   flex-wrap: wrap;
 }
 aside nav ul li a {
   text-decoration: none;
-  color: #000000;
+  color: #171A21;
   font-weight: bold;
   transition: 0.5s;
 }
 aside nav ul li a:hover {
   text-decoration: none;
-  background-color: #000000;
+  background-color: #171A21;
   border-radius: 5px;
   color: #ffffff;
   font-weight: bold;
@@ -170,7 +170,7 @@ footer #social {
   margin-top: 10px;
 }
 footer ul li a i {
-  color: #111318;
+  color: #171A21;
   width: 30px;
   text-align: center;
   transition: 0.5s;
@@ -179,7 +179,7 @@ footer ul li a i {
 }
 footer ul li a i:hover {
   color: #ffffff;
-  background-color: rgba(2, 2, 1, 0.6705882353);
+  background-color: #171A21;
   width: 30px;
   transition: 0.5s;
   border-radius: 5px;
@@ -189,7 +189,7 @@ footer ul li a i:hover {
 /* Index */
 main .principal-index div h2 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  color: whitesmoke;
+  color: #ffffff;
   text-transform: uppercase;
   text-align: right;
   margin: 30px 10px;
@@ -207,7 +207,7 @@ main .texto-general-index .titulos-index1 {
   text-align: left;
   margin: 30px 10px;
   color: #8cd2f0;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #ffffff;
   margin-right: 350px;
 }
 main .texto-general-index .titulos-index2 {
@@ -215,11 +215,11 @@ main .texto-general-index .titulos-index2 {
   text-align: right;
   margin: 30px 10px;
   color: #8cd2f0;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #ffffff;
   margin-left: 350px;
 }
 main .texto-general-index details summary {
-  color: white;
+  color: #ffffff;
   font-weight: bold;
   text-align: center;
 }
@@ -246,19 +246,19 @@ main .texto-general-index details summary {
 }
 #contacto main form {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 10px 150px;
   padding-top: 50px;
-  background-color: #242422;
-  border: 3px solid #112A46;
+  background-color: transparent;
+  border: 1px solid #ffffff;
   border-radius: 20px;
   transition: 1s;
   gap: 5px;
 }
 #contacto main form:hover {
-  background-color: #000000;
+  background-color: #171A21;
   box-shadow: 5px 5px 5px #a8bacf;
   transition: 0.5s;
 }
@@ -266,11 +266,14 @@ main .texto-general-index details summary {
   margin: 8px 5px;
   font-size: 19px;
   font-weight: bold;
-  color: #b1b8f0;
+  color: #ffffff;
 }
 #contacto main form input {
   margin: 10px;
   border-radius: 5px 5px 0px 0px;
+}
+#contacto main form textarea {
+  margin: 0px;
 }
 
 #objetivos main #principal-objetivos {
@@ -278,7 +281,7 @@ main .texto-general-index details summary {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 20px auto;
+  margin: 20px 10px;
   text-align: center;
 }
 #objetivos main #tarjeta-objetivo div {
@@ -290,9 +293,10 @@ main .texto-general-index details summary {
 }
 #objetivos main #tarjeta-objetivo div p {
   text-align: center;
+  margin: 10px 20px;
 }
 #objetivos main #tarjeta-objetivo div p span {
-  color: green;
+  color: rgb(0, 160, 0);
 }
 #objetivos main #tarjeta-objetivo div img {
   height: 300px;
@@ -320,7 +324,7 @@ main .texto-general-index details summary {
 }
 #alimentacion main #principal-alimentacion .details details p span {
   font-weight: bold;
-  color: green;
+  color: rgb(0, 160, 0);
 }
 #alimentacion main #principal-alimentacion .buscar-comida {
   grid-area: buscar;
@@ -331,7 +335,7 @@ main .texto-general-index details summary {
   flex-wrap: wrap;
   gap: 10px;
   width: auto;
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
   border-radius: 10px;
   margin-right: 5px;
 }
@@ -343,7 +347,7 @@ main .texto-general-index details summary {
   align-items: left;
   gap: 10px;
   width: auto;
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
   border-radius: 10px;
   margin-right: 5px;
 }
@@ -386,13 +390,13 @@ main .texto-general-index details summary {
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
   margin: auto 5px;
   padding: 10px;
 }
 #preparacion main #principal-preparacion #seleccionar-comida input {
   border-radius: 5px;
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
 }
 #preparacion main #principal-preparacion #preparacion-valores {
   grid-area: valores;
@@ -400,13 +404,13 @@ main .texto-general-index details summary {
   flex-direction: column;
   justify-content: center;
   align-items: left;
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
   margin: auto 5px;
   padding: 10px;
 }
 #preparacion main #principal-preparacion #preparacion-valores ul li {
   list-style: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #ffffff;
 }
 #preparacion main #principal-preparacion blockquote {
   grid-area: video;
@@ -440,9 +444,9 @@ main .texto-general-index details summary {
   height: 270px;
   border-radius: 10px;
   transition: 0.5s;
-  border: 1px solid white;
+  border: 1px solid #ffffff;
   background-color: transparent;
-  color: #fff;
+  color: #ffffff;
   box-shadow: 6px 6px 5px rgba(255, 252, 249, 0.4117647059);
 }
 .planes-pago ul li:hover {
@@ -472,11 +476,11 @@ main .texto-general-index details summary {
   .titulos {
     height: auto;
     margin: auto;
-    font-size: 25px;
+    font-size: 20px;
   }
   /* Componentes generales */
   .grilla {
-    background-image: linear-gradient(rgb(0, 0, 0), rgb(68, 68, 68), rgb(78, 78, 78));
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(48, 46, 46), rgb(24, 24, 24));
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
@@ -488,7 +492,7 @@ main .texto-general-index details summary {
   .grilla header {
     grid-area: title;
     background-color: #171A21;
-    color: aliceblue;
+    color: #ffffff;
     display: flex;
     justify-content: right;
     flex-wrap: wrap;
@@ -610,7 +614,7 @@ main .texto-general-index details summary {
   .grilla aside .nav-media summary {
     background-color: transparent;
     list-style: none;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 5px;
   }
   .grilla aside .nav-media summary i {
@@ -626,7 +630,7 @@ main .texto-general-index details summary {
   }
   .grilla aside .nav-media ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
   }
   .grilla main {
     grid-area: principal;

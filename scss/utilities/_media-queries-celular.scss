@@ -30,7 +30,7 @@
 
          header{
             grid-area: title;
-            background-color: #171A21;
+            background-color: nth($list: $colores, $n: 4);
             color: aliceblue;
             @include flex(row, center, center);
             flex-wrap: wrap; 
@@ -39,7 +39,7 @@
 
         aside{
             grid-area: nav;
-            background-color: #171A21;
+            background-color: nth($list: $colores, $n: 4);
             display: flex;
             height: auto;
                 nav{
@@ -50,11 +50,11 @@
                     summary{
                     background-color: transparent;
                     list-style: none;
-                    background-color: #fff;
+                    background-color: nth($list: $colores, $n: 5);
                     border-radius: 5px;
                         i{
                         padding: 5px;
-                        color: #171A21;
+                        color: nth($list: $colores, $n: 4);
                     }
                 }
                 
@@ -64,7 +64,7 @@
                         li{
                             a{
                             text-decoration: none;
-                            color: #fff;
+                            color: nth($list: $colores, $n: 5);
                         }
                     }
                 }
@@ -82,7 +82,7 @@
         footer{
             grid-area: footer;
             @include flex(row, center, center);
-            background-color: #ffffff;
+            background-color: nth($list: $colores, $n: 5);
             height: auto;
             width: 100%;
             flex-wrap: wrap;

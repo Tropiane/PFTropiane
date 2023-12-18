@@ -4,13 +4,13 @@
     text-align: center;
     font-family: "Bree+Serif";
     font-weight: bold;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
     .textos{
   font-family: "Imprima";
   font-weight: 600;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
     .btn-main{
@@ -19,7 +19,7 @@
       150deg, #3182D8, #5497DE, #98C0EB
     );
     border-radius: 9px;
-    color: #FFFFFF;
+    color: #ffffff;
     @include flex(row, center, center);
     font-size: 15px;
     font-weight: 500;

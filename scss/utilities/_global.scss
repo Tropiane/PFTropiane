@@ -4,7 +4,7 @@
 
 .grilla{
     // background-image: url(../assets/background\ white\ and\ yellow.jpg);
-    background-image: linear-gradient(rgb(0, 0, 0), rgb(68, 68, 68), rgb(78, 78, 78));
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(48, 46, 46), rgb(24, 24, 24));
     background-repeat: no-repeat;
     background-size: cover;
     display: grid;
@@ -20,8 +20,8 @@
   }
     header{
     grid-area: title;
-    background-color: #171A21;
-    color: aliceblue;
+    background-color: nth($list: $colores, $n: 4);
+    color: nth($list: $colores, $n: 5);
     display: flex;
     justify-content: right;
     flex-wrap: wrap; 
@@ -29,7 +29,7 @@
    }
     aside{
     grid-area: nav;
-    background-color: #ffffff;
+    background-color: nth($list: $colores, $n: 5);
     height: auto;
     display: flex;
     align-items: center;
@@ -59,7 +59,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ffffff;
+    background-color: nth($list: $colores, $n: 5);
     height: auto;
     flex-wrap: wrap;
     border-top: 1px solid black;
