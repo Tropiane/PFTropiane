@@ -3,12 +3,12 @@
 
 /* Responsive-tablet _______________*/
 
-@media screen and (min-width:768px) and (max-width:1024px){
+@media screen and (max-width:1024px){
 
 /* Texto y títulos tamaños */
 .textos{
     height: auto;
-    margin: auto;
+    margin: 5px 60px;
     font-size: 15px;
   }
   
@@ -21,16 +21,16 @@
   /* Componentes generales */
   .grilla{
     // background-image: url(../assets/background\ white\ and\ yellow.jpg);
-    background-image: linear-gradient(rgb(0, 0, 0), rgb(68, 68, 68), rgb(78, 78, 78));
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas:
-    "title"
-    "nav"
-    "principal"
-    "footer"
-    ;
+        background-image: linear-gradient(rgb(0, 0, 0), rgb(68, 68, 68), rgb(78, 78, 78));
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+        "title"
+        "nav"
+        "principal"
+        "footer"
+        ;
         header{
             grid-area: title;
             background-color: #171A21;
@@ -47,28 +47,20 @@
             height: auto;
             nav{
                 ul{
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    justify-content: center;
+                    @include flex(row, center, center);
                     list-style: none;
                     gap: 10px;
-                    height: auto;
                 }
             }
         }
         main{
             grid-area: principal;
-            background-color:#000000d3;
             height: auto;
             flex-wrap: wrap;
-            transition: 0.5s;
         }
         footer{
             grid-area: footer;
-            display: flex;
-            align-items: start;
-            justify-content: center;
+            @include flex(row, center, center);
             background-color: #ffffff;
             height: auto;
             flex-wrap: wrap;
@@ -87,9 +79,10 @@
 
           /* Index___________________________ */
           .info-principal{
+            @include flex(column, center, center);
                 iframe{
                     border-radius: 10px;
-                    width: 100%;
+                    width: 767px;
                 }
           }
 

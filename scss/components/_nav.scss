@@ -10,16 +10,16 @@
                 padding: 0;
                 margin-left: 10px;
                 list-style: none;
-                li{
+                    li{
                     color: #000000;
                     margin-top: 10px;
                     flex-wrap: wrap;
-                    a{
+                        a{
                         text-decoration: none;
                         color: #000000;
                         font-weight: bold;
                         transition: 0.5s;
-                        &:hover{
+                            &:hover{
                             text-decoration: none;
                             background-color: #000000;
                             border-radius: 5px;
@@ -49,7 +49,7 @@
             gap: 10px;
             list-style: none;
             margin-top: 10px;
-        }
+            }
         ul{
             li{
                 a{
@@ -60,13 +60,13 @@
                         transition: 0.5s;
                         font-size: 25px;
                         margin-right: 30px;
-                        &:hover{
+                            &:hover{
                             color: #ffffff;
                             background-color: #020201ab;
                             width: 30px;
                             transition: 0.5s;
                             border-radius: 5px
-                          }
+                            }
                     }
                 }
             }

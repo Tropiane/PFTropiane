@@ -70,14 +70,6 @@ footer:hover {
   transition: 0.5s;
 }
 
-.info-principal {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 10%;
-}
-
 /*Clases generales */
 .titulos {
   text-align: center;
@@ -235,8 +227,8 @@ main .texto-general-index details summary {
 .info-principal iframe {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   margin: 10%;
   border-radius: 10px;
 }
@@ -298,7 +290,9 @@ main .texto-general-index details summary {
 }
 #objetivos main #tarjeta-objetivo div p {
   text-align: center;
-  margin: 10px auto;
+}
+#objetivos main #tarjeta-objetivo div p span {
+  color: green;
 }
 #objetivos main #tarjeta-objetivo div img {
   height: 300px;
@@ -434,7 +428,7 @@ main .texto-general-index details summary {
 
 .planes-pago ul {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -468,11 +462,11 @@ main .texto-general-index details summary {
 
 /* Media-Queries */
 /* Responsive-tablet _______________*/
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   /* Texto y títulos tamaños */
   .textos {
     height: auto;
-    margin: auto;
+    margin: 5px 60px;
     font-size: 15px;
   }
   .titulos {
@@ -509,24 +503,22 @@ main .texto-general-index details summary {
   .grilla aside nav ul {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     list-style: none;
     gap: 10px;
-    height: auto;
   }
   .grilla main {
     grid-area: principal;
-    background-color: rgba(0, 0, 0, 0.8274509804);
     height: auto;
     flex-wrap: wrap;
-    transition: 0.5s;
   }
   .grilla footer {
     grid-area: footer;
     display: flex;
-    align-items: start;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
     background-color: #ffffff;
     height: auto;
     flex-wrap: wrap;
@@ -542,9 +534,15 @@ main .texto-general-index details summary {
   .grilla img {
     height: auto;
   }
+  .grilla .info-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .grilla .info-principal iframe {
     border-radius: 10px;
-    width: 100%;
+    width: 767px;
   }
   .grilla .form-control {
     margin-right: 20px;
@@ -565,8 +563,7 @@ main .texto-general-index details summary {
   }
   .textos {
     font-size: 13px;
-    text-align: center;
-    margin: 10px 100px;
+    margin: 5px 20px;
   }
   .titulos {
     font-size: 20px;
@@ -597,20 +594,12 @@ main .texto-general-index details summary {
   }
   .grilla aside {
     grid-area: nav;
-    background-color: #ffffff;
+    background-color: #171A21;
     display: flex;
     height: auto;
   }
   .grilla aside nav {
     display: none;
-  }
-  .grilla aside nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    height: auto;
   }
   .grilla aside .nav-media {
     display: flex;
@@ -619,9 +608,7 @@ main .texto-general-index details summary {
     align-items: center;
   }
   .grilla aside .nav-media summary {
-    position: absolute;
-    right: 0;
-    margin-right: 30px;
+    background-color: transparent;
     list-style: none;
     background-color: #fff;
     border-radius: 5px;
@@ -639,7 +626,7 @@ main .texto-general-index details summary {
   }
   .grilla aside .nav-media ul li a {
     text-decoration: none;
-    color: #171A21;
+    color: #fff;
   }
   .grilla main {
     grid-area: principal;
@@ -671,9 +658,15 @@ main .texto-general-index details summary {
     font-size: 19px;
     margin: 10px 100px;
   }
+  .grilla .info-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .grilla .info-principal iframe {
     border-radius: 10px;
-    width: 200px;
+    width: 320px;
   }
   .grilla #principal-alimentacion {
     display: flex;
@@ -701,11 +694,11 @@ main .texto-general-index details summary {
     margin-right: 20px;
   }
   .grilla main #tarjeta-objetivo div img {
-    width: 250px;
-    height: 250px;
+    width: 280px;
+    height: 200px;
   }
   .grilla main #tarjeta-objetivo div p {
-    margin: 0;
+    margin: 5px 10px;
   }
   .grilla main form {
     display: flex;

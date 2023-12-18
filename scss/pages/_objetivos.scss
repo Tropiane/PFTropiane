@@ -11,7 +11,9 @@
                 flex-wrap: wrap;
                 p{
                     text-align: center;
-                    margin: 10px auto;
+                        span{
+                            color: green;
+                        }
                 }
                 img{
                     height: 300px;

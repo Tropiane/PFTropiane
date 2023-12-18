@@ -13,7 +13,7 @@
      }
      .planes-pago{
         ul{
-            @include flex(row, center, center);
+            @include flex(column, center, center);
             flex-wrap: wrap;
             list-style: none;
             height: auto;
@@ -43,6 +43,4 @@
             }
         }
         
-        //Tarjetas-planes
-        
-     }
+    }

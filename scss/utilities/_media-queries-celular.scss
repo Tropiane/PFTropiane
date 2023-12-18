@@ -8,8 +8,7 @@
       }
     .textos{
         font-size: 13px;
-        text-align: center;
-        margin: 10px 100px;
+        margin: 5px 20px;
       }
       
       .titulos{
@@ -28,6 +27,7 @@
         "principal"
         "footer"
         ;
+
          header{
             grid-area: title;
             background-color: #171A21;
@@ -36,46 +36,41 @@
             flex-wrap: wrap; 
             height: auto;
         }
+
         aside{
             grid-area: nav;
-            background-color: #ffffff;
+            background-color: #171A21;
             display: flex;
             height: auto;
-            nav{
+                nav{
                 display: none;
-                ul{
-                    @include flex(row, space-between, center);
-                    gap: 10px;
-                    height: auto;
-                }
-            }
-            .nav-media{
+             }
+                .nav-media{
                 @include flex(column, center, center);
-                summary{
-                    position: absolute;
-                    right: 0;
-                    margin-right: 30px;
+                    summary{
+                    background-color: transparent;
                     list-style: none;
                     background-color: #fff;
                     border-radius: 5px;
-                    i{
+                        i{
                         padding: 5px;
                         color: #171A21;
                     }
                 }
                 
-                ul{
+                    ul{
                     list-style: none;
                     @include flex(column, center, end);
-                    li{
-                        a{
+                        li{
+                            a{
                             text-decoration: none;
-                            color: #171A21;
+                            color: #fff;
                         }
                     }
                 }
             }
         }
+
         main{
             grid-area: principal;
             height: auto;
@@ -83,6 +78,7 @@
             flex-wrap: wrap;
             background-image: linear-gradient(rgb(0, 0, 0), rgb(48, 46, 46), rgb(24, 24, 24));
         }
+
         footer{
             grid-area: footer;
             @include flex(row, center, center);
@@ -94,14 +90,17 @@
         }
          /* Index___________________________ */
          .principal-index{
+
             #titulo-inicial{
                 font-size: 20px;
                 margin-right: 50px;
             }
+
             .texto-general-index{
                 .titulos-index1{
                     font-size: 19px;
                 }
+
                 .titulos-index2{
                     font-size: 19px;
                     margin: 10px 100px;
@@ -109,16 +108,19 @@
             }
          }
          .info-principal{
+            @include flex(column, center, center);
             iframe{
                 border-radius: 10px;
-                width: 200px;
+                width: 320px;
             }
          }
          /* Alimentacion_____ */
+
          #principal-alimentacion{
             display: flex;
             flex-direction: column;
             margin: auto;
+            
             details{
                 summary{
                     font-size: 15px;
@@ -147,18 +149,18 @@
                 #tarjeta-objetivo{
                     div{
                          img{
-                                width: 250px;
-                                height: 250px;
+                                width: 280px;
+                                height: 200px;
                             }
                             p{
-                                margin: 0;
-                                
+                                margin: 5px 10px
                             }
                     }
-                 }
+                }
             }
         
             /* Contacto*/
+            
             main{
                 form{
                     @include flex(column, center, center);
