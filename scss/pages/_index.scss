@@ -48,8 +48,8 @@ main{
 }
 
 .info-principal{
+    @include flex(column, center, center);
         iframe{
-            @include flex(column, center, center);
             margin: 10%;
             border-radius: 10px;
         }

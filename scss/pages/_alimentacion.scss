@@ -18,6 +18,7 @@
             margin: 20px;
             gap: 15px;
                 details{
+                    @include flex(column, center, center);
                     p{
                         margin: 5px 200px;
                         span{

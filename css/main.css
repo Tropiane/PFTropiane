@@ -224,11 +224,13 @@ main .texto-general-index details summary {
   text-align: center;
 }
 
-.info-principal iframe {
+.info-principal {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.info-principal iframe {
   margin: 10%;
   border-radius: 10px;
 }
@@ -318,6 +320,12 @@ main .texto-general-index details summary {
   align-items: center;
   margin: 20px;
   gap: 15px;
+}
+#alimentacion main #principal-alimentacion .details details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #alimentacion main #principal-alimentacion .details details p {
   margin: 5px 200px;
