@@ -19,11 +19,15 @@
             gap: 15px;
                 details{
                     @include flex(column, center, center);
+                    summary{
+                        text-align: center
+                    }
                     p{
-                        margin: 5px 200px;
+                        margin: 5px 100px;
+                        text-align: center;
                         span{
                             font-weight: bold;
-                            color: nth($list: $colores, $n: 6);
+                            color: nth($list: $colores, $n: 7);
                         }
                     }
                 }
@@ -45,12 +49,11 @@
             width: auto;
             border: 1px solid #ffffff;
             border-radius: 10px;
-            margin-right: 5px;
                 ul{
                     list-style: none;
                     li{
                         border-bottom: 1px solid;
-                        margin-left: 10px;
+                        margin-left: 1px;
                     }
                 }
            }

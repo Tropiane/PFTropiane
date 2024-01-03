@@ -196,7 +196,6 @@ main .principal-index div h2 {
 }
 main .principal-index div p {
   text-align: center;
-  text-transform: capitalize;
 }
 main .texto-general-index {
   display: flex;
@@ -246,6 +245,9 @@ main .texto-general-index details summary {
 #contacto main .principal-contacto p {
   text-align: center;
 }
+#contacto main .principal-contacto p i {
+  font-size: 25px;
+}
 #contacto main form {
   display: flex;
   flex-direction: column;
@@ -254,14 +256,13 @@ main .texto-general-index details summary {
   margin: 10px 150px;
   padding-top: 50px;
   background-color: transparent;
-  border: 1px solid #ffffff;
   border-radius: 20px;
   transition: 1s;
   gap: 5px;
 }
 #contacto main form:hover {
   background-color: #171A21;
-  box-shadow: 5px 5px 5px #a8bacf;
+  box-shadow: 5px 5px 5px #8cd2f0;
   transition: 0.5s;
 }
 #contacto main form label {
@@ -298,7 +299,7 @@ main .texto-general-index details summary {
   margin: 10px 20px;
 }
 #objetivos main #tarjeta-objetivo div p span {
-  color: rgb(0, 160, 0);
+  color: #8cd2f0;
 }
 #objetivos main #tarjeta-objetivo div img {
   height: 300px;
@@ -327,12 +328,16 @@ main .texto-general-index details summary {
   justify-content: center;
   align-items: center;
 }
+#alimentacion main #principal-alimentacion .details details summary {
+  text-align: center;
+}
 #alimentacion main #principal-alimentacion .details details p {
-  margin: 5px 200px;
+  margin: 5px 100px;
+  text-align: center;
 }
 #alimentacion main #principal-alimentacion .details details p span {
   font-weight: bold;
-  color: rgb(0, 160, 0);
+  color: #8cd2f0;
 }
 #alimentacion main #principal-alimentacion .buscar-comida {
   grid-area: buscar;
@@ -357,14 +362,13 @@ main .texto-general-index details summary {
   width: auto;
   border: 1px solid #ffffff;
   border-radius: 10px;
-  margin-right: 5px;
 }
 #alimentacion main #principal-alimentacion .valores ul {
   list-style: none;
 }
 #alimentacion main #principal-alimentacion .valores ul li {
   border-bottom: 1px solid;
-  margin-left: 10px;
+  margin-left: 1px;
 }
 #alimentacion main #principal-alimentacion blockquote {
   grid-area: video;
@@ -634,7 +638,7 @@ main .texto-general-index details summary {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: end;
+    align-items: center;
   }
   .grilla aside .nav-media ul li a {
     text-decoration: none;
@@ -680,37 +684,41 @@ main .texto-general-index details summary {
     border-radius: 10px;
     width: 320px;
   }
-  .grilla #principal-alimentacion {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
+  .grilla #alimentacion main #principal-alimentacion .details details {
+    text-align: center;
   }
-  .grilla #principal-alimentacion details summary {
+  .grilla #alimentacion main #principal-alimentacion .details details summary {
     font-size: 15px;
     width: auto;
+    text-align: center;
   }
-  .grilla #principal-alimentacion details p {
-    width: 250px;
+  .grilla #alimentacion main #principal-alimentacion .details details p {
+    width: 200px;
   }
-  .grilla #principal-alimentacion .buscar-comida select {
+  .grilla #alimentacion main #principal-alimentacion .buscar-comida {
+    grid-area: buscar;
+  }
+  .grilla #alimentacion main #principal-alimentacion .buscar-comida select {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: auto;
   }
-  .grilla #principal-alimentacion .buscar-comida input {
+  .grilla #alimentacion main #principal-alimentacion .buscar-comida input {
     width: auto;
   }
-  .grilla #principal-alimentacion .form-control {
+  .grilla #alimentacion main #principal-alimentacion .form-control {
     margin-right: 20px;
   }
-  .grilla main #tarjeta-objetivo div img {
-    width: 280px;
-    height: 200px;
+  .grilla main #tarjeta-objetivo div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  .grilla main #tarjeta-objetivo div p {
-    margin: 5px 10px;
+  .grilla main #tarjeta-objetivo div img {
+    width: 320px;
   }
   .grilla main form {
     display: flex;
@@ -718,20 +726,25 @@ main .texto-general-index details summary {
     justify-content: center;
     align-items: center;
     height: auto;
-    width: 300px;
+    width: 200px;
   }
   .grilla main form h3 {
-    font-size: 18px;
+    font-size: 15px;
   }
   .grilla main form label {
-    font-size: 17px;
+    font-size: 15px;
+    text-align: center;
   }
   .grilla main form input {
-    font-size: 17px;
+    font-size: 15px;
   }
   .grilla #principal-planes p {
     width: 200px;
     margin-top: 20px;
+  }
+  .grilla .planes-pago ul li {
+    height: 250px;
+    width: 200px;
   }
 }
 
