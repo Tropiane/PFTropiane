@@ -60,7 +60,7 @@
                 
                     ul{
                     list-style: none;
-                    @include flex(column, center, end);
+                    @include flex(column, center, center);
                         li{
                             a{
                             text-decoration: none;
@@ -115,46 +115,53 @@
             }
          }
          /* Alimentacion_____ */
+         #alimentacion{
+            main{
+                
+                #principal-alimentacion{
+                    // @include flex(column, center, center);
+                    .details{
+                        details{
+                            text-align: center;
+                            summary{
+                                font-size: 15px;
+                                width: auto;
+                                text-align: center;
+                            }
+                            p{
+                                width: 200px;
+                            }
+                        }
+                    }
+                    
+                    .buscar-comida{
+                        grid-area: buscar;
+                        select{
+                            @include flex(column, center, center);
+                            width: auto;
+                        }
+                        input{
+                            width: auto;
+                        }
+                    }
+                    .form-control{
+                        margin-right: 20px;
+                      }
+                 }
 
-         #principal-alimentacion{
-            display: flex;
-            flex-direction: column;
-            margin: auto;
-            
-            details{
-                summary{
-                    font-size: 15px;
-                    width: auto;
-                }
-                p{
-                    width: 250px;
-                }
             }
-            .buscar-comida{
-                select{
-                    @include flex(column, center, center);
-                    width: auto;
-                }
-                input{
-                    width: auto;
-                }
-            }
-            .form-control{
-                margin-right: 20px;
-              }
          }
+         
          /* Objetivos_________ */
          
             main{
                 #tarjeta-objetivo{
                     div{
+                        @include flex(column, center, center);
                          img{
-                                width: 280px;
-                                height: 200px;
+                                width: 320px;
                             }
-                            p{
-                                margin: 5px 10px
-                            }
+                            
                     }
                 }
             }
@@ -165,15 +172,16 @@
                 form{
                     @include flex(column, center, center);
                     height: auto;
-                    width: 300px;
+                    width: 200px;
                     h3{
-                        font-size: 18px;
+                        font-size: 15px;
                     }
                     label{
-                        font-size: 17px;
+                        font-size: 15px;
+                        text-align: center;
                     }
                     input{
-                        font-size: 17px;
+                        font-size: 15px;
                     }
                 }
             }
@@ -182,6 +190,14 @@
                 p{
                     width: 200px;
                     margin-top: 20px;
+                }
+            }
+            .planes-pago{
+                ul{
+                    li{
+                        height: 250px;
+                        width: 200px;
+                    }
                 }
             }
     }
