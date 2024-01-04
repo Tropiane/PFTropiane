@@ -15,6 +15,9 @@
           #comida-info{
             grid-area: info;
             @include flex(column, center, center);
+            p{
+                text-align: center;
+            }
         }
 
         #seleccionar-comida{

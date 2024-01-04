@@ -76,6 +76,10 @@ footer:hover {
   font-family: "Bree+Serif";
   font-weight: bold;
   color: #ffffff;
+  border-bottom: solid 1px #8cd2f0;
+  border-left: 1px solid #8cd2f0;
+  border-radius: 5px;
+  box-shadow: 2px 2px rgba(140, 210, 240, 0.4117647059);
 }
 
 .textos {
@@ -84,6 +88,7 @@ footer:hover {
   color: #ffffff;
 }
 
+/*Boton personalizado*/
 .btn-main {
   border: 0;
   background-image: linear-gradient(150deg, #3182D8, #5497DE, #98C0EB);
@@ -123,6 +128,10 @@ header h1 {
   color: #ffffff;
   margin-right: 10px;
   font-family: "Courier New", Courier, monospace;
+}
+header h1 a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 /* NAV*/
@@ -187,21 +196,21 @@ footer ul li a i:hover {
 
 /* Pages */
 /* Index */
-main .principal-index div h2 {
+#index main .principal-index div h2 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: #ffffff;
   text-transform: uppercase;
   text-align: right;
   margin: 30px 10px;
 }
-main .principal-index div p {
+#index main .principal-index div p {
   text-align: center;
 }
-main .texto-general-index {
+#index main .texto-general-index {
   display: flex;
   flex-direction: column;
 }
-main .texto-general-index .titulos-index1 {
+#index main .texto-general-index .titulos-index1 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-align: left;
   margin: 30px 10px;
@@ -209,7 +218,7 @@ main .texto-general-index .titulos-index1 {
   border-bottom: 2px solid #ffffff;
   margin-right: 350px;
 }
-main .texto-general-index .titulos-index2 {
+#index main .texto-general-index .titulos-index2 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-align: right;
   margin: 30px 10px;
@@ -217,19 +226,22 @@ main .texto-general-index .titulos-index2 {
   border-bottom: 2px solid #ffffff;
   margin-left: 350px;
 }
-main .texto-general-index details summary {
+#index main .texto-general-index details summary {
   color: #ffffff;
   font-weight: bold;
   text-align: center;
 }
-
-.info-principal {
+#index main .texto-general-index details p span {
+  font-weight: bold;
+  color: #8cd2f0;
+}
+#index main .info-principal {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.info-principal iframe {
+#index main .info-principal iframe {
   margin: 10%;
   border-radius: 10px;
 }
@@ -279,6 +291,7 @@ main .texto-general-index details summary {
   margin: 0px;
 }
 
+/*Objetivos*/
 #objetivos main #principal-objetivos {
   display: flex;
   flex-direction: column;
@@ -394,6 +407,9 @@ main .texto-general-index details summary {
   justify-content: center;
   align-items: center;
 }
+#preparacion main #principal-preparacion #comida-info p {
+  text-align: center;
+}
 #preparacion main #principal-preparacion #seleccionar-comida {
   grid-area: comida;
   display: flex;
@@ -441,8 +457,7 @@ main .texto-general-index details summary {
   font-size: 20px;
   margin: 10px 100px;
 }
-
-.planes-pago ul {
+#planes .planes-pago ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -452,7 +467,7 @@ main .texto-general-index details summary {
   height: auto;
   gap: 15px;
 }
-.planes-pago ul li {
+#planes .planes-pago ul li {
   height: 270px;
   border-radius: 10px;
   transition: 0.5s;
@@ -461,18 +476,18 @@ main .texto-general-index details summary {
   color: #ffffff;
   box-shadow: 6px 6px 5px rgba(255, 252, 249, 0.4117647059);
 }
-.planes-pago ul li:hover {
+#planes .planes-pago ul li:hover {
   border-radius: 15px;
   transition: 0.5s;
   transform: scale(1.05);
 }
-.planes-pago ul li h3 {
+#planes .planes-pago ul li h3 {
   text-align: center;
 }
-.planes-pago ul li p {
+#planes .planes-pago ul li p {
   margin: 10px;
 }
-.planes-pago ul li input {
+#planes .planes-pago ul li input {
   width: 100%;
 }
 
@@ -497,9 +512,6 @@ main .texto-general-index details summary {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
     grid-template-areas: "title" "nav" "principal" "footer";
-    /* Index___________________________ */
-    /* Alimentacion_____ */
-    /* Objetivos_________ */
   }
   .grilla header {
     grid-area: title;
@@ -550,23 +562,26 @@ main .texto-general-index details summary {
   .grilla img {
     height: auto;
   }
-  .grilla .info-principal {
+  /* Index___________________________ */
+  #index .info-principal {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .grilla .info-principal iframe {
+  #index .info-principal iframe {
     border-radius: 10px;
-    width: 767px;
+    width: auto;
   }
-  .grilla .form-control {
+  /* Alimentacion_____ */
+  #alimentacion .form-control {
     margin-right: 20px;
   }
-  .grilla #tarjeta-objetivo div img {
+  /* Objetivos_________ */
+  #objetivos #tarjeta-objetivo div img {
     height: 250px;
   }
-  .grilla #tarjeta-objetivo div p {
+  #objetivos #tarjeta-objetivo div p {
     margin: 10px 150px;
   }
 }
@@ -663,26 +678,26 @@ main .texto-general-index details summary {
     flex-wrap: wrap;
     transition: 1s;
   }
-  .grilla .principal-index #titulo-inicial {
+  .grilla #index .principal-index #titulo-inicial {
     font-size: 20px;
     margin-right: 50px;
   }
-  .grilla .principal-index .texto-general-index .titulos-index1 {
+  .grilla #index .principal-index .texto-general-index .titulos-index1 {
     font-size: 19px;
   }
-  .grilla .principal-index .texto-general-index .titulos-index2 {
+  .grilla #index .principal-index .texto-general-index .titulos-index2 {
     font-size: 19px;
     margin: 10px 100px;
   }
-  .grilla .info-principal {
+  .grilla #index .info-principal {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .grilla .info-principal iframe {
-    border-radius: 10px;
+  .grilla #index .info-principal iframe {
     width: 320px;
+    border-radius: 10px;
   }
   .grilla #alimentacion main #principal-alimentacion .details details {
     text-align: center;
@@ -711,38 +726,38 @@ main .texto-general-index details summary {
   .grilla #alimentacion main #principal-alimentacion .form-control {
     margin-right: 20px;
   }
-  .grilla main #tarjeta-objetivo div {
+  .grilla #objetivos main #tarjeta-objetivo div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .grilla main #tarjeta-objetivo div img {
+  .grilla #objetivos main #tarjeta-objetivo div img {
     width: 320px;
   }
-  .grilla main form {
+  .grilla #contacto main form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: auto;
+    height: 400px;
     width: 200px;
   }
-  .grilla main form h3 {
+  .grilla #contacto main form h3 {
     font-size: 15px;
   }
-  .grilla main form label {
+  .grilla #contacto main form label {
     font-size: 15px;
     text-align: center;
   }
-  .grilla main form input {
+  .grilla #contacto main form input {
     font-size: 15px;
   }
-  .grilla #principal-planes p {
+  .grilla #planes #principal-planes p {
     width: 200px;
     margin-top: 20px;
   }
-  .grilla .planes-pago ul li {
+  .grilla #planes .planes-pago ul li {
     height: 250px;
     width: 200px;
   }

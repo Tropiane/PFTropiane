@@ -1,8 +1,10 @@
 /* Pages */
 /* Index */
 //pages
-main{
-    .principal-index{
+
+#index{
+    main{
+        .principal-index{
         div{
             h2{
                     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -16,7 +18,7 @@ main{
             }
         }
     }
-    .texto-general-index{
+        .texto-general-index{
             display: flex;
             flex-direction: column;
 
@@ -42,14 +44,21 @@ main{
                     font-weight: bold;
                     text-align: center;
             }
+            p{
+                span{
+                    font-weight: bold;
+                    color: nth($list: $colores, $n: 7);
+                }
+            }
+        }
+     }
+    
+        .info-principal{
+            @include flex(column, center, center);
+             iframe{
+                margin: 10%;
+                border-radius: 10px;
+            }
         }
     }
-}
-
-.info-principal{
-    @include flex(column, center, center);
-        iframe{
-            margin: 10%;
-            border-radius: 10px;
-        }
 }

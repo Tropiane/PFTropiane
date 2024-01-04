@@ -89,31 +89,34 @@
             transition: 1s;
         }
          /* Index___________________________ */
-         .principal-index{
+         #index{
+            .principal-index{
 
-            #titulo-inicial{
-                font-size: 20px;
-                margin-right: 50px;
-            }
-
-            .texto-general-index{
-                .titulos-index1{
-                    font-size: 19px;
+                #titulo-inicial{
+                    font-size: 20px;
+                    margin-right: 50px;
                 }
-
-                .titulos-index2{
-                    font-size: 19px;
-                    margin: 10px 100px;
+    
+                .texto-general-index{
+                    .titulos-index1{
+                        font-size: 19px;
+                    }
+    
+                    .titulos-index2{
+                        font-size: 19px;
+                        margin: 10px 100px;
+                    }
                 }
-            }
+             }
+             .info-principal{
+                @include flex(column, center, center);
+                iframe{
+                    width: 320px;
+                    border-radius: 10px;
+                }
+             }
          }
-         .info-principal{
-            @include flex(column, center, center);
-            iframe{
-                border-radius: 10px;
-                width: 320px;
-            }
-         }
+         
          /* Alimentacion_____ */
          #alimentacion{
             main{
@@ -153,7 +156,7 @@
          }
          
          /* Objetivos_________ */
-         
+         #objetivos{
             main{
                 #tarjeta-objetivo{
                     div{
@@ -165,13 +168,15 @@
                     }
                 }
             }
+         }
+            
         
             /* Contacto*/
-            
+         #contacto{
             main{
                 form{
                     @include flex(column, center, center);
-                    height: auto;
+                    height: 400px;
                     width: 200px;
                     h3{
                         font-size: 15px;
@@ -185,7 +190,10 @@
                     }
                 }
             }
+         }   
+            
             /* Planes*/
+         #planes{
             #principal-planes{
                 p{
                     width: 200px;
@@ -200,5 +208,7 @@
                     }
                 }
             }
+         }
+            
     }
 }
