@@ -1,6 +1,6 @@
 /* Media-Queries */
 
-
+//responsive tablet
 /* Responsive-tablet _______________*/
 
 @media screen and (max-width:1024px){
@@ -76,33 +76,37 @@
         img{
             height: auto;
           }
+    }
 
           /* Index___________________________ */
-          .info-principal{
-            @include flex(column, center, center);
-                iframe{
-                    border-radius: 10px;
-                    width: 767px;
-                }
+          #index{
+            .info-principal{
+                @include flex(column, center, center);
+                    iframe{
+                        border-radius: 10px;
+                        width: auto;
+                    }
+              }
           }
-
            /* Alimentacion_____ */
-        .form-control{
+           #alimentacion{
+            .form-control{
                 margin-right: 20px;
-        }
+            }
+           }
+        
 
          /* Objetivos_________ */
-         #tarjeta-objetivo{
-            div{
-                img{
-                    height: 250px;
-                }
-                p{
-                    margin: 10px 150px;
+         #objetivos{
+            #tarjeta-objetivo{
+                div{
+                    img{
+                        height: 250px;
+                    }
+                    p{
+                        margin: 10px 150px;
+                    }
                 }
             }
-         }
-
-         
-    }
+        }
 }

@@ -1,3 +1,4 @@
+//contacto
 /* Contacto */
 
 #contacto{
@@ -12,9 +13,10 @@
                 text-align: center;
                     i{
                         font-size: 25px
-                    }
-            }
+                }
+        }
     }
+
     form{
         @include flex(column, center, center);
         margin: 10px 150px;
@@ -24,24 +26,24 @@
         border-radius: 20px;
         transition: 1s;
         gap: 5px;
-        &:hover{
-            background-color: nth($list: $colores, $n: 4);
-            box-shadow: 5px 5px 5px #8cd2f0;
-            transition: 0.5s;
-        }
+            &:hover{
+                background-color: nth($list: $colores, $n: 4);
+                box-shadow: 5px 5px 5px #8cd2f0;
+                transition: 0.5s;
+            }
         label{
             margin: 8px 5px;
             font-size: 19px;
             font-weight: bold;
             color: nth($list: $colores, $n: 5);
-        }
+            }
         input{
             margin: 10px;
             border-radius: 5px 5px 0px 0px;
-             }
+            }
         textarea{
             margin: 0px;
-        }
+            }
         }
     }
 }
